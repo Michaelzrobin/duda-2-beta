@@ -1,17 +1,19 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Bleach</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/css/global.css">
-    <link rel="stylesheet" type="text/css" href="/css/bleach.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-<body>
-
+<body class="page-bleach">
+    <!-- back button ? -->
+    <!-- <a class="back-button" href="/stories.html"> ↵ </a> <a class="back-text" href="/stories.html"> STORIES</a> -->
+    <!-- end back button -->
     <!-- TITLE- if background-size set to cover
     maybe a description on click? maybe positioned somewhere else on screen? -->
     <div class="plus-to-minus">
-        <a class="series-title"> bleach <span class="show"> +</span> <span class="hide"> -</span> </a>
+        <a class="series-title"> bleach <span class="show"><span class="light">[</span>&plus;<span class="light">]</span></span><span class="hide"> <span class="light">[</span>&minus;<span class="light">]</span></span> </a>
         <div class="description-screen">
             <div class="series-description">
             <h2> bleach </h2> My cat is very clumsy. One day he knocked his cat food all over. As I was cleaning it with all purpose bleach spray I realized I had accidentally sprayed a blue c-print of mine. I stopped. The bleach was boiling the blue ink into a vibrant orange/red. I watched the poison breathe through out the colors. I wiped the bleach off with a paper towel, only to see that it had left that spot pure white as if there was never any image or ink there. I knew I had to bleach myself, I had to feel that fire across my skin. It had to bubble, flame and linger. Only then did I have a real chance at wiping myself clean. All of the images are color-prints treated with bleach.
@@ -30,18 +32,19 @@
     <div class="toggle-it">
     <div class="fixed">
     <a>
-    <span>EMILY DUDA</span>  <span class="show"> +</span> <span class="hide"> -</span>
+    <span>EMILY DUDA </span>  <span class="show"> &plus;</span> <span class="hide"> &minus;</span>
     </a>
     </div>
     </div>
      <div class="sidebar">
             <ul>
-                <li> <a href="/contact.html"> EMILY DUDA</a>  </li>
-                <li> <a href="/stories.html"> STORIES </a> </li>
+                <li> <a href="/contact.html"> EMILY DUDA </a>  </li>
+                <li> <a href="/index.html"> WORK </a> </li>
                 <li> <a href="/contact.html"> OBJECTS </a> </li>
                 <li> <a href="/contact.html"> CONTACT </a> </li>
             </ul>
     </div>
+
 
     <!-- PHOTOS -->
 
@@ -116,33 +119,20 @@
         </div>
     </div>
 
+    <div class="back">
+        <a href="/index.html">back</a>
+    </div>
+
+
+
 
     <!-- SCRIPTS -->
     <!-- Include jQuery -->
     <script src="javascripts/jquery.js"></script>
     <!-- Include Arbitrary Anchor Script -->
     <script type="text/javascript" src="/javascripts/jquery.arbitrary-anchor.js"></script>
+    <script src="/javascripts/scripts.js"></script>
 
-    <!-- SIDEBAR JQUERY -->
-    <script>
-    $(function() {
-      $('.fixed,.sidebar').click(function() {
-        $('.sidebar').toggleClass('show');
-      });
-      $('.fixed,.sidebar').click(function() {
-        $('.toggle-it').toggleClass('on');
-      });
-      $('.fixed,.sidebar').click(function() {
-        $('.screen-wrapper').toggleClass('on');
-      });
-      $('.series-title, .description-screen').click(function() {
-        $('.plus-to-minus').toggleClass('on');
-      });
-
-
-    });
-
-    </script>
 </body>
 </html>
 

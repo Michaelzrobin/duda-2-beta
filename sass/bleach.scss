@@ -12,7 +12,6 @@ html, body{
 
 }
 
-
 //
 // helper-arrow to guide user to scroll
 // need js scroll easing script
@@ -28,6 +27,39 @@ html, body{
 }
 
 
+// back to previous page?
+// .back-button{
+//     font-size: 2.5em;
+//     position: fixed;
+//     left: 3%;
+//     font-weight: bold;
+//     bottom: 8%;
+//     color: rgba(0,0,0,.5);
+//     z-index: 999999;
+//     opacity: .9;
+//     transition: 800ms;
+//     &:hover{
+//     color: rgba(0,0,0,.7);
+//     }
+//     &:hover + a{
+//         z-index: 999999;
+//         opacity: .9;
+//     }
+// }
+// .back-text{
+//     font-weight: bold;
+//     font-size: 2.3em;
+//     position: fixed;
+//     left: 6%;
+//     bottom: 8.5%;
+//     color: rgba(0,0,0,.7);
+//     opacity:0;
+//     transition: 800ms;
+//     z-index: 1;
+//     &:hover{
+//         opacity: .9;
+//     }
+// }
 
 // INSERT PHOTOS HERE
 .photos{
@@ -70,7 +102,7 @@ html, body{
     }
     .page4{
         background-image: url(../images/optimized/bleach05.jpg);
-        background-position: 75% 68%;
+        background-position: 75% 55%;
         // position: relative;
 
     }
@@ -81,6 +113,7 @@ html, body{
 
     }
 }
+
 //
 // MEDIA QUERIES
 //

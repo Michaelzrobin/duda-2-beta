@@ -3,11 +3,9 @@
 <head>
     <title>Watercolors</title>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="/css/global.css">
-    <link rel="stylesheet" type="text/css" href="/css/lia.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-    <body>
-
+    <body class="page-lia">
         <!-- TITLE -->
         <!-- <span class="series-title"> WATERCOLORS </span> -->
 
@@ -22,7 +20,7 @@
         <div class="toggle-it">
         <div class="fixed">
         <a>
-        <span>EMILY DUDA</span>  <span class="show"> +</span> <span class="hide"> -</span>
+        <span>EMILY DUDA</span>  <span class="show"> &plus;</span> <span class="hide"> &minus;</span>
         </a>
         </div>
         </div>
@@ -197,24 +195,8 @@
         <script src="javascripts/jquery.js"></script>
         <!-- Include Arbitrary Anchor Script -->
         <script type="text/javascript" src="/javascripts/jquery.arbitrary-anchor.js"></script>
+        <script src="/javascripts/scripts.js"></script>
 
-        <!-- SIDEBAR JQUERY -->
-        <script>
-        $(function() {
-          $('.fixed,.sidebar').click(function() {
-            $('.sidebar').toggleClass('show');
-          });
-          $('.fixed,.sidebar').click(function() {
-            $('.toggle-it').toggleClass('on');
-          });
-          $('.fixed,.sidebar').click(function() {
-            $('.screen-wrapper').toggleClass('on');
-          });
-
-
-        });
-
-        </script>
     </body>
 </html>
 

@@ -7,8 +7,6 @@ html, body{
     height:100%;
 }
 
-@import 'reset';
-@import 'bootstrap';
 // SIDEBAR WHITENED
 .sidebar{
     // background-color: rgba(0,0,0,.22);
@@ -79,6 +77,33 @@ a{
         font-weight: bold;
         text-align: center;
     }
+
+
+//
+// ALTERNATE RULES FOR
+// DEFAULT EXPANDED SIDEBAR
+//
+
+.fixed{
+    left: 243px;
+}
+
+.on{
+    .fixed{
+    left: 0;
+    }
+}
+
+.sidebar{
+    left:0;
+}
+
+.show{
+    left:-400px;
+}
+//
+// END ALTERNATE RULES
+//
 
 
 //

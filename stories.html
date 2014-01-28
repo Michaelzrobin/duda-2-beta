@@ -3,23 +3,23 @@
     <title>STORIES</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="stylesheet" type="text/css" href="css/stories.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-<body>
+<body class="page-stories">
+
 
     <!-- SIDEBAR -->
     <div class="toggle-it">
         <div class="fixed">
             <a>
-                <span>EMILY DUDA</span>  <span class="show"> +</span> <span class="hide"> -</span>
+                <span>EMILY DUDA</span>  <span class="show"> &plus;</span> <span class="hide"> &minus;</span>
             </a>
         </div>
     </div>
      <div class="sidebar">
         <ul>
-            <li> <a href="/contact.html"> EMILY DUDA</a>  </li>
-            <li> <a href="/stories.html"> STORIES </a> </li>
+            <li> <a href="/contact.html" class="artist-name"> EMILY DUDA</a>  </li>
+            <li> <a href="/stories.html"> WORK </a> </li>
             <li> <a href="/contact.html"> OBJECTS </a> </li>
             <li> <a href="/contact.html"> CONTACT </a> </li>
         </ul>
@@ -107,25 +107,8 @@
     <script src="javascripts/jquery.js"></script>
     <!-- Include Arbitrary Anchor Script -->
     <script type="text/javascript" src="/javascripts/jquery.arbitrary-anchor.js"></script>
+    <script src="/javascripts/scripts.js"></script>
 
-
-    <!-- SIDEBAR JQUERY -->
-    <script>
-    $(function() {
-      $('.fixed,.sidebar').click(function() {
-        $('.sidebar').toggleClass('show');
-      });
-      $('.fixed,.sidebar').click(function() {
-        $('.toggle-it').toggleClass('on');
-      });
-      $('.fixed,.sidebar').click(function() {
-        $('.screen-wrapper').toggleClass('on');
-      });
-
-
-    });
-
-    </script>
 </body>
 </html>
 

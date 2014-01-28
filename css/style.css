@@ -1,13 +1,3 @@
-body {
-  background-image: url(../images/optimized/lia1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-html, body {
-  height: 100%;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -2552,27 +2542,315 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
-.sidebar {
-  min-width: 325px;
-}
-.sidebar a {
-  color: white;
-  transition: 300ms linear;
-  opacity: .6;
-}
-.sidebar a:hover {
-  color: white;
-  opacity: .9;
+.sc-player {
+  font: 12px Arial, sans-serif;
+  color: #333;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  font-weight: bold;
 }
 
-.fixed a {
-  color: white;
-  opacity: .6;
-  transition: 300ms linear;
+.sc-player.special {
+  border: 2px solid #ff3300;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 5px;
 }
-.fixed a:hover {
-  color: white;
-  opacity: .9;
+
+.sc-player a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* scrubber */
+.sc-scrubber {
+  background-color: #e5e5e5;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.sc-scrubber .sc-time-span {
+  background-color: #fff;
+}
+
+.sc-scrubber .sc-time-span img {
+  height: 30px;
+  width: 100%;
+  background-color: #000;
+}
+
+.sc-scrubber .sc-buffer, .sc-scrubber .sc-played {
+  background-color: #fff;
+  opacity: 0.4;
+}
+
+.sc-scrubber .sc-played {
+  background-color: #000;
+  opacity: 0.4;
+}
+
+/* controls */
+.sc-player .sc-controls a {
+  color: transparent;
+  background: url("img/play.png");
+}
+
+.sc-player .sc-controls a:hover {
+  background: url("img/play-hover.png");
+}
+
+.sc-player .sc-controls a.sc-pause {
+  background: url("img/play.png");
+}
+
+.sc-player .sc-controls a.sc-pause:hover {
+  background: url("img/play-hover.png");
+}
+
+.sc-player.playing .sc-controls a.sc-pause {
+  background: url("img/pause.png");
+}
+
+.sc-player.playing .sc-controls a.sc-pause:hover {
+  background: url("img/pause-hover.png");
+}
+
+.sc-scrubber .sc-time-indicators {
+  background: #fff;
+  color: #000;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 2px;
+  font-size: 0.4em;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+/* Track listings*/
+.sc-player ol.sc-trackslist li.active, .sc-player ol.sc-trackslist li:hover {
+  background-color: #fff;
+  padding: 4px;
+  color: #000;
+}
+
+.sc-player ol.sc-trackslist li.active a {
+  color: #000;
+}
+
+.sc-track-duration {
+  text-align: right;
+  float: right;
+  padding: 0 5px;
+  margin-left: 5px;
+  display: none;
+}
+
+/* Track info*/
+.sc-player .sc-info {
+  background: #fff;
+  opacity: 0.9;
+}
+
+.sc-player .sc-info-toggle {
+  background: #fff;
+  color: #003399;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #ccc;
+  -webkit-box-shadow: 1px 1px 4px #ccc;
+  padding: 4px;
+}
+
+.sc-player .sc-info-toggle:hover {
+  background: #003399;
+  color: #eee;
+}
+
+.sc-player .sc-info-close {
+  background: #003399;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+.sc-player {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.sc-player ol, .sc-player li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* Artworks */
+.sc-player .sc-artwork-list {
+  display: none;
+}
+
+.sc-player .sc-artwork-list li {
+  list-style-type: none;
+  display: none;
+}
+
+.sc-player .sc-artwork-list li.active {
+  list-style-type: none;
+  display: block;
+}
+
+.sc-player .sc-artwork-list li img, .sc-player .sc-artwork-list li div {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* controls */
+.sc-player .sc-controls {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 8px;
+}
+
+.sc-player .sc-controls a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.sc-player .sc-controls a.sc-play, .sc-player .sc-controls a.sc-pause {
+  text-indent: -3000px;
+}
+
+.sc-player .sc-controls a.sc-pause {
+  display: none;
+}
+
+.sc-player.playing .sc-controls a.sc-play {
+  display: none;
+}
+
+.sc-player.playing .sc-controls a.sc-pause {
+  display: block;
+}
+
+/* scrubber */
+.sc-scrubber {
+  position: absolute;
+  left: -5000px;
+  bottom: 10px;
+  height: 40px;
+  width: 95.5%;
+}
+
+.sc-player:hover .sc-scrubber, .sc-player.playing .sc-scrubber {
+  display: block;
+  left: 45px;
+}
+
+.sc-scrubber .sc-time-span {
+  height: 30px;
+  margin: 5px;
+  position: relative;
+}
+
+.sc-scrubber .sc-buffer, .sc-scrubber .sc-played {
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 0;
+  -webkit-transition: width 0.1s linear;
+}
+
+.sc-scrubber .sc-time-indicators {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+
+/* tracks */
+/* Track listings*/
+.sc-player ol.sc-trackslist {
+  position: absolute;
+  float: left;
+  width: 92%;
+  height: 100%;
+  left: 45px;
+  overflow: auto;
+}
+
+.sc-player ol.sc-trackslist li {
+  float: left;
+  width: 95.5%;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  list-style: none;
+}
+
+/* Track info*/
+.sc-player .sc-info {
+  position: absolute;
+  top: 10px;
+  left: -5000px;
+  width: 200px;
+  padding: 5px;
+  height: 450px;
+  z-index: 500;
+  margin-left: -40px;
+}
+
+.sc-player .sc-info.active {
+  left: 25%;
+  top: 5%;
+}
+
+.sc-player .sc-info-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+
+.sc-player .sc-info-toggle.active {
+  left: -5000px;
+}
+
+.sc-player .sc-info-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* utilities */
+.sc-player .hidden {
+  display: none;
+}
+
+.sc-player-engine-container {
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 2px;
+  left: 2px;
+}
+
+.sc-artwork-list,
+.sc-info,
+.sc-trackslist,
+.sc-info-toggle,
+.sc-scrubber {
+  display: none !important;
+}
+
+html, body {
+  height: 100%;
 }
 
 a {
@@ -2585,7 +2863,878 @@ a:hover {
   cursor: pointer;
 }
 
-.email {
+.hidden {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.not-mobile {
+  display: block;
+}
+
+.link-spanner {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.light {
+  opacity: .5;
+}
+
+.series-title {
+  position: fixed;
+  right: 9px;
+  top: -13px;
+  font-weight: bold;
+  font-size: 4em;
+  color: black;
+  opacity: .6;
+  z-index: 99999;
+  transition: 500ms;
+}
+.series-title .show, .series-title .hide {
+  font-size: .7em;
+  vertical-align: 7px;
+}
+.series-title:hover {
+  opacity: .9;
+}
+
+.description-screen {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 900ms;
+  opacity: 0;
+  z-index: 1;
+}
+
+.series-description {
+  font-weight: bold;
+  position: fixed;
+  margin: 0 auto;
+  top: 25%;
+  left: 35%;
+  width: 50%;
+}
+
+.on .description-screen {
+  opacity: 1;
+  z-index: 999;
+}
+.on .series-title {
+  opacity: 1;
+}
+
+.back {
+  position: fixed;
+  bottom: 3.5%;
+  left: 40px;
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+  opacity: .35;
+  z-index: 99999;
+  transition: 500ms;
+}
+.back:hover {
+  opacity: .8;
+}
+
+.photos {
+  width: 100%;
+  height: 100%;
+}
+.photos:first-child {
+  margin-top: 0px;
+}
+.photos:last-child {
+  padding-bottom: 0px;
+}
+.photos div {
+  position: relative;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  background: no-repeat fixed;
+  background-position: 81% 45%;
+  background-size: 70%;
+}
+.photos .cover {
+  background-image: url(../images/optimized/buddy.jpg);
+}
+.photos .page1 {
+  background-image: url(../images/optimized/buddy01.jpg);
+}
+.photos .page2 {
+  background-image: url(../images/optimized/buddy02.jpg);
+  background-position: 83%;
+}
+.photos .page3 {
+  background-image: url(../images/optimized/buddy03.jpg);
+}
+.photos .page4 {
+  background-image: url(../images/optimized/buddy04.jpg);
+}
+.photos .page5 {
+  background-image: url(../images/optimized/buddy05.jpg);
+}
+.photos .page6 {
+  background-image: url(../images/optimized/buddy06.jpg);
+}
+.photos .page7 {
+  background-image: url(../images/optimized/buddy07.jpg);
+  background-position: 83% 44%;
+}
+.photos .page8 {
+  background-image: url(../images/optimized/buddy08.jpg);
+  background-position: 83%;
+}
+
+.arrow-container {
+  position: relative;
+  height: 100%;
+  float: right;
+  width: 25%;
+}
+
+.helper-arrow {
+  clear: both;
+  font-size: 110px;
+  font-weight: bold;
+  color: black;
+  opacity: .3;
+  position: absolute;
+  right: 40px;
+  bottom: 35px;
+  z-index: 99;
+  transition-property: opacity, bottom;
+  transition-duration: .4s, .3s;
+  transition-timing-function: linear, ease-in;
+}
+.helper-arrow:hover {
+  opacity: .6;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+  .photos div {
+    background-attachment: scroll;
+    background-size: 90%;
+  }
+
+  .link-spanner {
+    z-index: 1;
+  }
+
+  .photos div {
+    background-size: 85%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .not-mobile {
+    display: none;
+    opacity: 0;
+  }
+
+  .on .fixed a {
+    color: white;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .on .fixed a {
+    color: white;
+  }
+
+  .link-spanner {
+    z-index: 1;
+  }
+
+  .fixed {
+    margin-left: -15px;
+  }
+}
+.sidebar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: -400px;
+  height: 100%;
+  z-index: 9999;
+  min-width: 325px;
+  overflow-x: auto;
+  overflow-y: auto;
+  font-family: "Compact Sans Serifs",tahoma,verdana,arial,sans-serif;
+  font-size: 2.4em;
+  font-weight: bold;
+  line-height: 1.1em;
+  color: black;
+  transition: 200ms ease-in;
+}
+.sidebar ul {
+  margin: 50px 0 0 30px;
+}
+.sidebar a {
+  transition-property: opacity;
+  transition: 400ms;
+  color: black;
+  opacity: .6;
+}
+.sidebar a:hover {
+  opacity: .8;
+}
+
+.show {
+  display: inline;
+  left: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 92px;
+  left: 0;
+  z-index: 99999;
+  background-color: none;
+  transition: 200ms ease-in;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fixed a {
+  font-family: helvetica;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  opacity: .6;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.fixed a:hover {
+  font-family: helvetica;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  opacity: .8;
+}
+
+.on .hide {
+  display: inline;
+}
+.on .show {
+  display: none;
+}
+.on .fixed {
+  left: 243px;
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+
+  .on .fixed {
+    left: 148px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .on .fixed {
+    left: 198px;
+  }
+
+  .fixed {
+    top: 103px;
+    font-size: 1.2em;
+    left: -35px;
+  }
+  .fixed a:hover {
+    opacity: .9;
+  }
+  .fixed a .show {
+    opacity: 1;
+  }
+  .fixed a .hide {
+    opacity: .9;
+  }
+
+  .sidebar {
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+  .sidebar li a {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: white;
+    opacity: .9;
+  }
+  .sidebar li a:hover {
+    opacity: 1;
+  }
+
+  .screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 300ms;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .on .helper-arrow {
+    opacity: 0;
+    transition: 80ms;
+  }
+  .on .screen {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@media only screen and (max-width: 320px) {
+  .fixed {
+    left: -20px;
+  }
+  .fixed a:hover {
+    opacity: .9;
+  }
+  .fixed a .show {
+    opacity: .9;
+  }
+
+  .sidebar {
+    top: 0px;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+  .sidebar ul {
+    margin-left: 12px;
+  }
+  .sidebar ul li a {
+    color: white;
+    opacity: .9;
+  }
+  .sidebar ul li a:hover {
+    opacity: 1;
+  }
+
+  .screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 300ms;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .on .helper-arrow {
+    opacity: .1;
+    transition: 80ms;
+  }
+  .on .screen {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+body.page-lia {
+  /* 900px and under*/
+  /* 480 and */
+}
+body.page-lia html, body.page-lia body {
+  height: 100%;
+}
+body.page-lia .helper-arrow {
+  right: 24px;
+  bottom: 29px;
+}
+body.page-lia .helper-arrow:hover {
+  bottom: 18;
+}
+body.page-lia .photos div {
+  width: 100%;
+  background-position: 73% 50%;
+  background-size: auto 90%;
+  height: 100%;
+}
+body.page-lia .photos .cover {
+  background-image: url(../images/optimized/lia.jpg);
+  position: relative;
+}
+body.page-lia .photos .page1 {
+  background-image: url(../images/optimized/lia1.jpg);
+}
+body.page-lia .photos .page2 {
+  background-image: url(../images/optimized/lia2.jpg);
+  background-position: 73% 50%;
+}
+body.page-lia .photos .page3 {
+  background-image: url(../images/optimized/lia3.jpg);
+  background-position: 73% 50%;
+}
+body.page-lia .photos .page4 {
+  background-image: url(../images/optimized/lia4.jpg);
+  background-position: 73% 50%;
+}
+body.page-lia .photos .page5 {
+  background-image: url(../images/optimized/lia5.jpg);
+}
+body.page-lia .photos .page6 {
+  background-image: url(../images/optimized/lia6.jpg);
+}
+body.page-lia .photos .page7 {
+  background-image: url(../images/optimized/lia7.jpg);
+  background-position: 73% 50%;
+}
+body.page-lia .photos .page8 {
+  background-image: url(../images/optimized/lia8.jpg);
+  background-position: 45% 50%;
+}
+body.page-lia .photos .page9 {
+  background-image: url(../images/optimized/lia9.jpg);
+}
+body.page-lia .photos .page10 {
+  background-image: url(../images/optimized/lia10.jpg);
+}
+body.page-lia .photos .page11 {
+  background-image: url(../images/optimized/lia11.jpg);
+}
+body.page-lia .photos .page12 {
+  background-image: url(../images/optimized/lia12.jpg);
+}
+@media only screen and (max-width: 900px) {
+  body.page-lia .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+  body.page-lia .photos .page2 {
+    background-size: auto 85%;
+  }
+  body.page-lia .photos .page8 {
+    background-position: 70% 50%;
+    background-size: auto 85%;
+  }
+  body.page-lia .photos .page11 {
+    background-position: 70% 50%;
+    background-size: auto 85%;
+  }
+  body.page-lia .photos div {
+    width: 100%;
+    height: 100%;
+    background-size: 85%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body.page-lia .photos .page2 {
+    background-size: auto 65%;
+  }
+  body.page-lia .photos .page8 {
+    background-position: 70% 50%;
+    background-size: auto 65%;
+  }
+  body.page-lia .photos .page11 {
+    background-position: 70% 50%;
+    background-size: auto 65%;
+  }
+  body.page-lia .on .fixed a {
+    color: white;
+  }
+}
+
+body.page-bleach {
+  /* 900px and under*/
+  /* 480 and */
+}
+body.page-bleach html, body.page-bleach body {
+  height: 100%;
+}
+body.page-bleach .series-description {
+  top: 32%;
+  left: 39%;
+  width: 45%;
+}
+body.page-bleach .helper-arrow {
+  right: 33px;
+  bottom: 29px;
+}
+body.page-bleach .helper-arrow:hover {
+  bottom: 18;
+}
+body.page-bleach .photos div {
+  width: 100%;
+  background-size: 55%;
+  height: 100%;
+}
+body.page-bleach .photos .cover {
+  background-image: url(../images/optimized/bleach.jpg);
+  background-position: 75% 50%;
+  position: relative;
+}
+body.page-bleach .photos .page1 {
+  background-image: url(../images/optimized/bleach02.jpg);
+  background-position: 75% 50%;
+}
+body.page-bleach .photos .page2 {
+  background-image: url(../images/optimized/bleach03.jpg);
+  background-position: 75% 48%;
+}
+body.page-bleach .photos .page3 {
+  background-image: url(../images/optimized/bleach04.jpg);
+  background-position: 75% 50%;
+}
+body.page-bleach .photos .page4 {
+  background-image: url(../images/optimized/bleach05.jpg);
+  background-position: 75% 55%;
+}
+body.page-bleach .photos .page5 {
+  background-image: url(../images/optimized/bleach06.jpg);
+  background-position: 75% 50%;
+}
+@media only screen and (max-width: 900px) {
+  body.page-bleach .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body.page-bleach .photos div {
+    width: 100%;
+    height: 100%;
+    background-size: 85%;
+  }
+  body.page-bleach .on .fixed a {
+    color: white;
+  }
+}
+body.page-bleach.fullheightversion html {
+  height: 100%;
+}
+body.page-bleach.fullheightversion .arrow-container {
+  position: relative;
+  height: 100%;
+  float: right;
+  width: 25%;
+}
+body.page-bleach.fullheightversion .helper-arrow {
+  clear: both;
+  display: block;
+  font-size: 110px;
+  font-weight: bold;
+  color: black;
+  opacity: .3;
+  position: absolute;
+  right: 33px;
+  bottom: 28;
+  z-index: 1;
+  transition-property: opacity, bottom;
+  transition-duration: .4s, .3s;
+  transition-timing-function: linear, ease-in;
+}
+body.page-bleach.fullheightversion .helper-arrow:hover {
+  opacity: .6;
+  bottom: 18;
+  cursor: pointer;
+}
+body.page-bleach.fullheightversion .photos div {
+  background-size: 60%;
+  height: 100;
+}
+body.page-bleach.fullheightversion .photos .cover {
+  background-image: url(../images/optimized/bleach.jpg);
+  background-position: 395px 40px;
+  position: relative;
+}
+body.page-bleach.fullheightversion .photos .page1 {
+  background-image: url(../images/optimized/bleach02.jpg);
+  background-position: 395px 40px;
+}
+body.page-bleach.fullheightversion .photos .page2 {
+  background-image: url(../images/optimized/bleach03.jpg);
+  background-position: 395px 35px;
+}
+body.page-bleach.fullheightversion .photos .page3 {
+  background-image: url(../images/optimized/bleach04.jpg);
+  background-position: 395px 40px;
+}
+body.page-bleach.fullheightversion .photos .page4 {
+  background-image: url(../images/optimized/bleach05.jpg);
+  background-position: 395px 20px;
+}
+body.page-bleach.fullheightversion .photos .page5 {
+  background-image: url(../images/optimized/bleach06.jpg);
+  background-position: 395px 40px;
+}
+
+body.page-salmon {
+  /* 900px and under*/
+  /* 320 and */
+}
+body.page-salmon html {
+  height: 100%;
+}
+body.page-salmon .series-description {
+  top: 30%;
+  left: 40%;
+  width: 46%;
+}
+body.page-salmon .arrow-container {
+  position: relative;
+  height: 100%;
+  float: right;
+  width: 25%;
+}
+body.page-salmon .helper-arrow {
+  right: 5px;
+  bottom: 52px;
+  z-index: 99;
+}
+body.page-salmon .helper-arrow:hover {
+  bottom: 42px;
+}
+body.page-salmon body {
+  position: relative;
+}
+body.page-salmon .play-div {
+  position: fixed;
+  top: -20px;
+  left: 30%;
+  z-index: 99;
+}
+body.page-salmon .photos div {
+  background-size: 65%;
+  width: 100%;
+  height: 100%;
+}
+body.page-salmon .photos .cover {
+  position: relative;
+  background-image: url(../images/optimized/salmon.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page1 {
+  background-image: url(../images/optimized/salmon02.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page2 {
+  background-image: url(../images/optimized/salmon03.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page3 {
+  background-image: url(../images/optimized/salmon04.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page4 {
+  background-image: url(../images/optimized/salmon05.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page5 {
+  background-image: url(../images/optimized/salmon06.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page6 {
+  background-image: url(../images/optimized/salmon07.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page7 {
+  background-image: url(../images/optimized/salmon08.jpg);
+  background-position: 86.4% 52%;
+}
+body.page-salmon .photos .page8 {
+  background-image: url(../images/optimized/salmon09.jpg);
+  background-position: 86.4% 52%;
+}
+@media only screen and (max-width: 900px) {
+  body.page-salmon .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body.page-salmon .photos div {
+    width: 100%;
+    height: 100%;
+    background-size: 80%;
+    background-position: 95% 90%;
+  }
+  body.page-salmon .on .fixed a {
+    color: white;
+  }
+  body.page-salmon .play-div {
+    transition: 200ms;
+    left: 16%;
+  }
+  body.page-salmon .hide-play {
+    opacity: .1;
+  }
+}
+
+body.page-watercolors {
+  /* 900px and under*/
+  /* 480 and */
+}
+body.page-watercolors html, body.page-watercolors body {
+  height: 100%;
+}
+body.page-watercolors .helper-arrow {
+  right: 24px;
+  bottom: 29px;
+}
+body.page-watercolors .helper-arrow:hover {
+  bottom: 18px;
+}
+body.page-watercolors .photos div {
+  width: 100%;
+  background-position: 73% 50%;
+  background-size: cover;
+  height: 100%;
+}
+body.page-watercolors .photos .cover {
+  background-image: url(../images/optimized/wc.jpg);
+  position: relative;
+}
+body.page-watercolors .photos .page1 {
+  background-image: url(../images/optimized/wc1.jpg);
+}
+body.page-watercolors .photos .page2 {
+  background-image: url(../images/optimized/wc2.jpg);
+  background-position: 83% 100%;
+}
+body.page-watercolors .photos .page3 {
+  background-image: url(../images/optimized/wc3.jpg);
+}
+body.page-watercolors .photos .page4 {
+  background-image: url(../images/optimized/wc4.jpg);
+}
+body.page-watercolors .photos .page5 {
+  background-image: url(../images/optimized/wc6.jpg);
+}
+body.page-watercolors .photos .page6 {
+  background-image: url(../images/optimized/wc7.jpg);
+}
+body.page-watercolors .photos .page7 {
+  background-image: url(../images/optimized/wc8.jpg);
+  background-position: 73% 50%;
+}
+body.page-watercolors .photos .page8 {
+  background-image: url(../images/optimized/wc9.jpg);
+  background-position: 45% 90%;
+}
+body.page-watercolors .photos .page9 {
+  background-image: url(../images/optimized/wc10.jpg);
+}
+body.page-watercolors .photos .page10 {
+  background-image: url(../images/optimized/wc11.jpg);
+}
+body.page-watercolors .photos .page11 {
+  background-image: url(../images/optimized/wc12.jpg);
+  background-position: 75% 75%;
+}
+@media only screen and (max-width: 900px) {
+  body.page-watercolors .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+  body.page-watercolors .photos .page2 {
+    background-size: auto 85%;
+  }
+  body.page-watercolors .photos .page8 {
+    background-position: 70% 50%;
+    background-size: auto 85%;
+  }
+  body.page-watercolors .photos .page11 {
+    background-position: 70% 50%;
+    background-size: auto 85%;
+  }
+  body.page-watercolors .photos div {
+    width: 100%;
+    height: 100%;
+    background-size: 85%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body.page-watercolors .photos .page2 {
+    background-size: auto 65%;
+  }
+  body.page-watercolors .photos .page8 {
+    background-position: 70% 50%;
+    background-size: auto 65%;
+  }
+  body.page-watercolors .photos .page11 {
+    background-position: 70% 50%;
+    background-size: auto 65%;
+  }
+  body.page-watercolors .on .fixed a {
+    color: white;
+  }
+}
+
+body.page-contact {
+  /* 900px and under*/
+  /* 320 and */
+}
+body.page-contact body {
+  background-image: url(../images/optimized/lia1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.page-contact html, body.page-contact body {
+  height: 100%;
+}
+body.page-contact .sidebar {
+  min-width: 325px;
+}
+body.page-contact .sidebar a {
+  color: white;
+  transition: 300ms linear;
+  opacity: .6;
+}
+body.page-contact .sidebar a:hover {
+  color: white;
+  opacity: .9;
+}
+body.page-contact .fixed a {
+  color: white;
+  opacity: .6;
+  transition: 300ms linear;
+}
+body.page-contact .fixed a:hover {
+  color: white;
+  opacity: .9;
+}
+body.page-contact a {
+  text-decoration: none;
+  color: black;
+}
+body.page-contact a:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+body.page-contact .email {
   position: fixed;
   top: 55%;
   left: 31px;
@@ -2594,29 +3743,328 @@ a:hover {
   font-weight: bold;
   text-align: center;
 }
-
-/* 900px and under*/
+body.page-contact .fixed {
+  left: 243px;
+}
+body.page-contact .on .fixed {
+  left: 0;
+}
+body.page-contact .sidebar {
+  left: 0;
+}
+body.page-contact .show {
+  left: -400px;
+}
 @media only screen and (max-width: 900px) {
-  .sidebar {
+  body.page-contact .sidebar {
     font-size: 1.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
 }
 @media only screen and (max-width: 768px) {
-  .email {
+  body.page-contact .email {
     font-size: 2.5em;
   }
 }
 @media only screen and (max-width: 480px) {
-  .email {
+  body.page-contact .email {
     font-size: 1.8em;
     top: 45%;
     left: 20px;
   }
-
-  .on .fixed a {
+  body.page-contact .on .fixed a {
     opacity: .9;
   }
 }
-/* 320 and */
+
+body.page-stories {
+  /* 900px and under*/
+  /* 320 and */
+}
+body.page-stories html, body.page-stories body {
+  height: 100%;
+}
+body.page-stories a {
+  text-decoration: none;
+  color: black;
+}
+body.page-stories a:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+body.page-stories .project-title {
+  font-size: 50px;
+  color: white;
+  margin: 0 0 0 0;
+  position: relative;
+  text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.3);
+}
+body.page-stories .project-description {
+  z-index: 999;
+  font-size: 14px;
+  color: white;
+  min-width: 150px;
+  height: 100px;
+  width: 15%;
+}
+body.page-stories .project-description p {
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.7);
+}
+body.page-stories .project-description p.active {
+  opacity: 0.6;
+}
+body.page-stories .project-description h2 {
+  opacity: .6;
+  transition: opacity .5s linear;
+}
+body.page-stories .project-description h2:hover, body.page-stories .project-description h2:hover + p {
+  opacity: 0.9;
+}
+body.page-stories .project-description .hide-on-hover {
+  font-size: 15px;
+  padding-left: 10px;
+  vertical-align: middle;
+  transition: .7s;
+}
+body.page-stories .fbsection1 .project-description {
+  position: relative;
+  left: 60%;
+  top: 20%;
+}
+body.page-stories .fbsection2 .project-description {
+  position: relative;
+  left: 25%;
+  top: 40%;
+}
+body.page-stories .fbsection3 .project-description {
+  position: relative;
+  top: 26%;
+  left: 70%;
+}
+body.page-stories .fbsection4 .project-description {
+  position: relative;
+  top: 18%;
+  left: 27%;
+  width: 35%;
+}
+body.page-stories .fbsection5 .project-description {
+  position: relative;
+  left: 60%;
+  top: 30%;
+}
+body.page-stories .stories-photos {
+  height: 100%;
+  position: relative;
+}
+body.page-stories .stories-photos > div {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+body.page-stories #fbsection1 {
+  background-size: cover;
+  height: 100%;
+  background-image: url(../images/optimized/bleach.jpg);
+}
+body.page-stories #fbsection2 {
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/optimized/previews/watercolor-preview.jpg);
+}
+body.page-stories #fbsection3 {
+  background-size: cover;
+  height: 100%;
+  background-image: url(../images/optimized/salmon.jpg);
+}
+body.page-stories #fbsection4 {
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/optimized/previews/buddy-preview.jpg);
+}
+body.page-stories #fbsection5 {
+  background-size: cover;
+  height: 100%;
+  background-position: 0px -80px;
+  background-image: url(../images/optimized/lia10.jpg);
+}
+body.page-stories .sidebar {
+  min-width: 325px;
+}
+body.page-stories .sidebar a {
+  color: white;
+  transition: 300ms linear;
+  opacity: .6;
+}
+body.page-stories .sidebar a:hover {
+  color: white;
+  opacity: .9;
+}
+body.page-stories .fixed a {
+  color: white;
+  opacity: .6;
+  transition: 300ms linear;
+}
+body.page-stories .fixed a:hover {
+  color: white;
+  opacity: .9;
+}
+body.page-stories .helper-arrow {
+  right: 16px;
+  bottom: 0px;
+  color: white;
+}
+body.page-stories .helper-arrow:hover {
+  color: white;
+  bottom: -12px;
+}
+@media only screen and (max-width: 900px) {
+  body.page-stories .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+  body.page-stories #fbsection1 .project-description {
+    left: 50%;
+    top: 25%;
+    width: 40%;
+  }
+  body.page-stories #fbsection1 .project-description .project-title {
+    opacity: .7;
+  }
+  body.page-stories #fbsection1 .project-description p {
+    opacity: .8;
+  }
+  body.page-stories #fbsection2 .project-description {
+    left: 25%;
+    top: 55%;
+    width: 40%;
+  }
+  body.page-stories #fbsection2 .project-description .project-title {
+    opacity: .7;
+  }
+  body.page-stories #fbsection2 .project-description p {
+    opacity: .8;
+  }
+  body.page-stories #fbsection3 {
+    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+  }
+  body.page-stories #fbsection3 .project-description {
+    top: 28%;
+    left: 27%;
+    width: 40%;
+  }
+  body.page-stories #fbsection3 .project-description .project-title {
+    opacity: .7;
+  }
+  body.page-stories #fbsection3 .project-description p {
+    opacity: .8;
+  }
+  body.page-stories #fbsection4 {
+    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  body.page-stories #fbsection4 .project-description {
+    top: 24%;
+    left: 67%;
+    width: 30%;
+  }
+  body.page-stories #fbsection4 .project-description .project-title {
+    opacity: .7;
+  }
+  body.page-stories #fbsection4 .project-description p {
+    opacity: .8;
+  }
+  body.page-stories #fbsection5 .project-description {
+    left: 50%;
+    top: 25%;
+    width: 40%;
+  }
+  body.page-stories #fbsection5 .project-description .project-title {
+    opacity: .7;
+  }
+  body.page-stories #fbsection5 .project-description p {
+    opacity: .8;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body.page-stories #fbsection4 .project-description {
+    top: 12%;
+    left: 58%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body.page-stories .project-description {
+    z-index: 0;
+  }
+  body.page-stories .on .fixed a {
+    opacity: .9;
+  }
+  body.page-stories #fbsection1 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+  body.page-stories #fbsection2 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+  body.page-stories #fbsection3 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+  body.page-stories #fbsection4 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+  body.page-stories .helper-arrow {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body.page-stories .helper-arrow {
+    opacity: .4;
+    right: 30%;
+  }
+  body.page-stories .project-description .project-title {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  body.page-stories .project-description p:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: .8;
+  }
+  body.page-stories #fbsection1 .project-description {
+    width: 80%;
+    left: 20%;
+    top: 13%;
+  }
+  body.page-stories #fbsection2 h2 {
+    font-size: 2.9em;
+  }
+  body.page-stories #fbsection2 .project-description {
+    width: 80%;
+    left: 20%;
+    top: 10%;
+  }
+  body.page-stories #fbsection3 {
+    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+  }
+  body.page-stories #fbsection3 .project-description {
+    left: 20%;
+    top: 13%;
+    width: 80%;
+  }
+  body.page-stories #fbsection4 {
+    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
+  }
+  body.page-stories #fbsection4 .project-description {
+    left: 20%;
+    top: 13%;
+    width: 80%;
+  }
+}

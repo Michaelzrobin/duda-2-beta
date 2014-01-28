@@ -2,9 +2,6 @@ html, body{
     height:100%;
 }
 
-@import 'reset';
-@import 'bootstrap';
-
 //          //
 //  GLOBAL  //
 //          //
@@ -42,42 +39,37 @@ a{
     text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.3);
 }
 
-.project-description{
+.project-description {
     z-index: 999;
     font-size:14px;
     color:white;
     min-width:150px;
     height:100px;
     width: 15%;
-    p{
+
+
+    p {
         color: white;
         opacity: 0;
-        transition: 1s ease-in;
+        transition: opacity 0.5s linear;
         text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.7);
 
+        &.active {
+            opacity: 0.6;
+        }
     }
     h2{
-    opacity: .6;
-    transition: .7s linear;
-        .hide-on-hover{
-        font-size:15px;
-        padding-left: 10px;
-        vertical-align:middle;
-        transition: .7s;
+        opacity: .6;
+        transition: opacity .5s linear;
 
+        &:hover {
+            &, & + p {
+                opacity: 0.9;
+            }
         }
-        &:hover{
-        opacity: .9
 
-        }
-        &:hover + p{
-        opacity: .9;
-        }
-        &:hover .hide-on-hover{
-        opacity: 0;
-        // display: none
-        // ^fade out or replace?
-        }
+
+
         //
         // REPLACE RIGHT ARROW
         // WITH DOWN ARROW?
@@ -88,6 +80,13 @@ a{
         //     padding-left: 10px;
         //     vertical-align:middle;
         // }
+    }
+
+    .hide-on-hover{
+        font-size:15px;
+        padding-left: 10px;
+        vertical-align:middle;
+        transition: .7s;
     }
 }
 
@@ -175,7 +174,7 @@ a{
     background-image: url(../images/optimized/lia10.jpg);
 }
 
-// SIDEBAR WHITENED
+// SIDEBAR FOR HOMEPAGE
 .sidebar{
     // background-color: rgba(0,0,0,.22);
     min-width: 325px;
@@ -193,6 +192,8 @@ a{
     }
 }
 
+.artist-name{
+}
 .fixed{
     a{
     color:white;
@@ -205,6 +206,33 @@ a{
         }
     }
 }
+
+//
+// ALTERNATE RULES FOR
+// DEFAULT EXPANDED SIDEBAR
+//
+
+// .fixed{
+//     left: 243px;
+// }
+
+// .on{
+//     .fixed{
+//     left: 0;
+//     }
+// }
+
+// .sidebar{
+//     left:0;
+// }
+
+// .show{
+//     left:-400px;
+// }
+//
+// END ALTERNATE RULES
+//
+
 
 
 

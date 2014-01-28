@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+}
+
+.arrow-container {
+  position: relative;
+  height: 100%;
+  float: right;
+  width: 25%;
+}
+
+.helper-arrow {
+  clear: both;
+  display: block;
+  font-size: 110px;
+  font-weight: bold;
+  color: black;
+  opacity: .3;
+  position: absolute;
+  right: 33px;
+  bottom: 28;
+  z-index: 1;
+  transition-property: opacity, bottom;
+  transition-duration: .4s, .3s;
+  transition-timing-function: linear, ease-in;
+}
+.helper-arrow:hover {
+  opacity: .6;
+  bottom: 18;
+  cursor: pointer;
+}
+
+.photos div {
+  background-size: 60%;
+  height: 100;
+}
+.photos .cover {
+  background-image: url(../images/optimized/bleach.jpg);
+  background-position: 395px 40px;
+  position: relative;
+}
+.photos .page1 {
+  background-image: url(../images/optimized/bleach02.jpg);
+  background-position: 395px 40px;
+}
+.photos .page2 {
+  background-image: url(../images/optimized/bleach03.jpg);
+  background-position: 395px 35px;
+}
+.photos .page3 {
+  background-image: url(../images/optimized/bleach04.jpg);
+  background-position: 395px 40px;
+}
+.photos .page4 {
+  background-image: url(../images/optimized/bleach05.jpg);
+  background-position: 395px 20px;
+}
+.photos .page5 {
+  background-image: url(../images/optimized/bleach06.jpg);
+  background-position: 395px 40px;
+}
