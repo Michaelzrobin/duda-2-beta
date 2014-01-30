@@ -62,11 +62,11 @@
     display: none;
 }
 
-
 .fixed{
     position: fixed;
-    top: 92px;
+    top: 100px;
     left:0;
+    font-size: 1.1em;
     z-index: 99999;
     background-color: none;
     transition: 200ms ease-in;
@@ -80,6 +80,7 @@
         font-weight: bold;
         text-decoration: none;
         color: black;
+        position: relative;
         opacity: .6;
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         &:hover{
@@ -88,6 +89,13 @@
             text-decoration: none;
             color: black;
             opacity: .8;
+        }
+        &:after{
+            content:"";
+            padding: 35px 110px 40px 110px;
+            position: absolute;
+            left: -50px;
+            top: -20px;
         }
     }
 }

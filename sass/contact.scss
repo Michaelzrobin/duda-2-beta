@@ -1,12 +1,14 @@
-body{
-    background-image: url(../images/optimized/lia1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
 html, body{
     height:100%;
 }
 
+.contact-container{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/optimized/lia1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 // SIDEBAR WHITENED
 .sidebar{
     // background-color: rgba(0,0,0,.22);
