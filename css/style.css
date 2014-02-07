@@ -9377,17 +9377,18 @@ p {
 }
 
 .series-title {
-  font-family: "League Gothic", sans-serif;
+  font-family: "Raleway";
   position: fixed;
-  right: 9px;
-  top: -13px;
-  font-size: 4.6em;
+  right: 15px;
+  top: -5px;
+  font-size: 4em;
   color: black;
   opacity: .6;
   z-index: 99999;
   transition: 500ms;
 }
 .series-title .show, .series-title .hide {
+  font-family: "Open Sans";
   font-size: .7em;
   vertical-align: 7px;
 }
@@ -9426,13 +9427,13 @@ p {
 }
 
 .back {
-  font-family: "League Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  font-family: "raleway";
   position: fixed;
   bottom: 3.5%;
   left: 40px;
-  font-size: 2em;
+  font-size: 1.8em;
   color: black;
-  opacity: .35;
+  opacity: .6;
   z-index: 99999;
   transition: 500ms;
 }
