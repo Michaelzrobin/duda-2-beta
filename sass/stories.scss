@@ -61,6 +61,7 @@ a{
     h2{
         opacity: .6;
         transition: opacity .5s linear;
+        line-height: 1;
 
         &:hover {
             &, & + p {

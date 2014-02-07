@@ -9326,6 +9326,8 @@ td.visible-print {
 
 html, body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -10182,6 +10184,8 @@ body.page-contact {
 }
 body.page-contact html, body.page-contact body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
 }
 body.page-contact .contact-container {
   height: 100%;
@@ -10307,6 +10311,7 @@ body.page-stories .project-description p.active {
 body.page-stories .project-description h2 {
   opacity: .6;
   transition: opacity .5s linear;
+  line-height: 1;
 }
 body.page-stories .project-description h2:hover, body.page-stories .project-description h2:hover + p {
   opacity: 0.9;

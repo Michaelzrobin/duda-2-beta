@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.contact-container {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/optimized/lia1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sidebar {
+  min-width: 325px;
+}
+.sidebar a {
+  color: white;
+  transition: 300ms linear;
+  opacity: .6;
+}
+.sidebar a:hover {
+  color: white;
+  opacity: .9;
+}
+
+.fixed a {
+  color: white;
+  opacity: .6;
+  transition: 300ms linear;
+}
+.fixed a:hover {
+  color: white;
+  opacity: .9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.email {
+  position: fixed;
+  top: 55%;
+  left: 31px;
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fixed {
+  left: 243px;
+}
+
+.on .fixed {
+  left: 0;
+}
+
+.sidebar {
+  left: 0;
+}
+
+.show {
+  left: -400px;
+}
+
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .email {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .email {
+    font-size: 1.8em;
+    top: 45%;
+    left: 20px;
+  }
+
+  .on .fixed a {
+    opacity: .9;
+  }
+}
+/* 320 and */

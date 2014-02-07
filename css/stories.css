@@ -1,0 +1,324 @@
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.project-title {
+  font-size: 50px;
+  color: white;
+  margin: 0 0 0 0;
+  position: relative;
+  text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.3);
+}
+
+.project-description {
+  z-index: 999;
+  font-size: 14px;
+  color: white;
+  min-width: 150px;
+  height: 100px;
+  width: 15%;
+}
+.project-description p {
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.7);
+}
+.project-description p.active {
+  opacity: 0.6;
+}
+.project-description h2 {
+  opacity: .6;
+  transition: opacity .5s linear;
+  line-height: 1;
+}
+.project-description h2:hover, .project-description h2:hover + p {
+  opacity: 0.9;
+}
+.project-description .hide-on-hover {
+  font-size: 15px;
+  padding-left: 10px;
+  vertical-align: middle;
+  transition: .7s;
+}
+
+.fbsection1 .project-description {
+  position: relative;
+  left: 60%;
+  top: 20%;
+}
+
+.fbsection2 .project-description {
+  position: relative;
+  left: 25%;
+  top: 40%;
+}
+
+.fbsection3 .project-description {
+  position: relative;
+  top: 26%;
+  left: 70%;
+}
+
+.fbsection4 .project-description {
+  position: relative;
+  top: 18%;
+  left: 27%;
+  width: 35%;
+}
+
+.fbsection5 .project-description {
+  position: relative;
+  left: 60%;
+  top: 30%;
+}
+
+.stories-photos {
+  height: 100%;
+  position: relative;
+}
+
+.stories-photos > div {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+#fbsection1 {
+  background-size: cover;
+  height: 100%;
+  background-image: url(../images/optimized/bleach.jpg);
+}
+
+#fbsection2 {
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/optimized/previews/watercolor-preview.jpg);
+}
+
+#fbsection3 {
+  background-size: cover;
+  height: 100%;
+  background-image: url(../images/optimized/salmon.jpg);
+}
+
+#fbsection4 {
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/optimized/previews/buddy-preview.jpg);
+}
+
+#fbsection5 {
+  background-size: cover;
+  height: 100%;
+  background-position: 0px -80px;
+  background-image: url(../images/optimized/lia10.jpg);
+}
+
+.sidebar {
+  min-width: 325px;
+}
+.sidebar a {
+  color: white;
+  transition: 300ms linear;
+  opacity: .6;
+}
+.sidebar a:hover {
+  color: white;
+  opacity: .9;
+}
+
+.fixed a {
+  color: white;
+  opacity: .6;
+  transition: 300ms linear;
+}
+.fixed a:hover {
+  color: white;
+  opacity: .9;
+}
+
+.helper-arrow {
+  right: 16px;
+  bottom: 0px;
+  color: white;
+}
+.helper-arrow:hover {
+  color: white;
+  bottom: -12px;
+}
+
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+
+  #fbsection1 .project-description {
+    left: 50%;
+    top: 25%;
+    width: 40%;
+  }
+  #fbsection1 .project-description .project-title {
+    opacity: .7;
+  }
+  #fbsection1 .project-description p {
+    opacity: .8;
+  }
+
+  #fbsection2 .project-description {
+    left: 25%;
+    top: 55%;
+    width: 40%;
+  }
+  #fbsection2 .project-description .project-title {
+    opacity: .7;
+  }
+  #fbsection2 .project-description p {
+    opacity: .8;
+  }
+
+  #fbsection3 {
+    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+  }
+  #fbsection3 .project-description {
+    top: 28%;
+    left: 27%;
+    width: 40%;
+  }
+  #fbsection3 .project-description .project-title {
+    opacity: .7;
+  }
+  #fbsection3 .project-description p {
+    opacity: .8;
+  }
+
+  #fbsection4 {
+    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #fbsection4 .project-description {
+    top: 24%;
+    left: 67%;
+    width: 30%;
+  }
+  #fbsection4 .project-description .project-title {
+    opacity: .7;
+  }
+  #fbsection4 .project-description p {
+    opacity: .8;
+  }
+
+  #fbsection5 .project-description {
+    left: 50%;
+    top: 25%;
+    width: 40%;
+  }
+  #fbsection5 .project-description .project-title {
+    opacity: .7;
+  }
+  #fbsection5 .project-description p {
+    opacity: .8;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #fbsection4 .project-description {
+    top: 12%;
+    left: 58%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .project-description {
+    z-index: 0;
+  }
+
+  .on .fixed a {
+    opacity: .9;
+  }
+
+  #fbsection1 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+
+  #fbsection2 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+
+  #fbsection3 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+
+  #fbsection4 .project-description {
+    left: 15%;
+    width: 80%;
+  }
+
+  .helper-arrow {
+    opacity: 0;
+  }
+}
+/* 320 and */
+@media only screen and (max-width: 320px) {
+  .helper-arrow {
+    opacity: .4;
+    right: 30%;
+  }
+
+  .project-description .project-title {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .project-description p:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: .8;
+  }
+
+  #fbsection1 .project-description {
+    width: 80%;
+    left: 20%;
+    top: 13%;
+  }
+
+  #fbsection2 h2 {
+    font-size: 2.9em;
+  }
+  #fbsection2 .project-description {
+    width: 80%;
+    left: 20%;
+    top: 10%;
+  }
+
+  #fbsection3 {
+    background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
+  }
+  #fbsection3 .project-description {
+    left: 20%;
+    top: 13%;
+    width: 80%;
+  }
+
+  #fbsection4 {
+    background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
+  }
+  #fbsection4 .project-description {
+    left: 20%;
+    top: 13%;
+    width: 80%;
+  }
+}
