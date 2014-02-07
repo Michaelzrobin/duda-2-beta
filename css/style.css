@@ -9326,8 +9326,7 @@ td.visible-print {
 
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: "arial", sans-serif;
 }
 
 a {
@@ -9338,6 +9337,18 @@ a:hover {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+h1, h3, h2 {
+  font-family: "Raleway";
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+p {
+  font-family: "Junction", sans-serif;
 }
 
 .hidden {
@@ -9366,11 +9377,11 @@ a:hover {
 }
 
 .series-title {
+  font-family: "League Gothic", sans-serif;
   position: fixed;
   right: 9px;
   top: -13px;
-  font-weight: bold;
-  font-size: 4em;
+  font-size: 4.6em;
   color: black;
   opacity: .6;
   z-index: 99999;
@@ -9398,7 +9409,7 @@ a:hover {
 }
 
 .series-description {
-  font-weight: bold;
+  font-family: "Junction", sans-serif;
   position: fixed;
   margin: 0 auto;
   top: 25%;
@@ -9415,12 +9426,12 @@ a:hover {
 }
 
 .back {
+  font-family: "League Gothic", "ITC Franklin Gothic", Arial, sans-serif;
   position: fixed;
   bottom: 3.5%;
   left: 40px;
-  font-size: 1.3em;
+  font-size: 2em;
   color: black;
-  font-weight: bold;
   opacity: .35;
   z-index: 99999;
   transition: 500ms;
@@ -9490,7 +9501,6 @@ a:hover {
 .helper-arrow {
   clear: both;
   font-size: 110px;
-  font-weight: bold;
   color: black;
   opacity: .3;
   position: absolute;
@@ -9559,15 +9569,15 @@ a:hover {
   min-width: 325px;
   overflow-x: auto;
   overflow-y: auto;
-  font-family: "Compact Sans Serifs",tahoma,verdana,arial,sans-serif;
-  font-size: 2.4em;
-  font-weight: bold;
-  line-height: 1.1em;
+  font-family: "Raleway";
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 1em;
   color: black;
   transition: 200ms ease-in;
 }
 .sidebar ul {
-  margin: 50px 0 0 30px;
+  margin: 50px 0 0 40px;
 }
 .sidebar a {
   transition-property: opacity;
@@ -9590,8 +9600,8 @@ a:hover {
 
 .fixed {
   position: fixed;
-  top: 100px;
-  left: 0;
+  top: 130px;
+  left: -25px;
   font-size: 1.1em;
   z-index: 99999;
   background-color: none;
@@ -9603,19 +9613,23 @@ a:hover {
   transform: rotate(90deg);
 }
 .fixed a {
-  font-family: helvetica;
-  font-weight: bold;
+  font-family: "Raleway";
+  font-weight: 800;
   text-decoration: none;
   color: black;
   position: relative;
+  transition: 100ms ease-in;
   opacity: .6;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .fixed a:hover {
-  font-family: helvetica;
-  font-weight: bold;
+  font-family: "Raleway";
+  font-weight: 800;
   text-decoration: none;
   color: black;
+  position: relative;
+  transition: 200ms ease-in;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   opacity: .8;
 }
 .fixed a:after {
@@ -9633,7 +9647,7 @@ a:hover {
   display: none;
 }
 .on .fixed {
-  left: 243px;
+  left: 220px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -9649,25 +9663,29 @@ a:hover {
 }
 @media only screen and (max-width: 480px) {
   .on .fixed {
-    left: 198px;
+    top: 75;
+    left: 195px;
+    width: 150px;
   }
 
   .fixed {
-    top: 103px;
+    top: 108px;
     font-size: 1.2em;
-    left: -35px;
+    left: -65px;
   }
   .fixed a:hover {
     opacity: .9;
   }
   .fixed a .show {
     opacity: 1;
+    left: -20px;
   }
   .fixed a .hide {
     opacity: .9;
   }
 
   .sidebar {
+    top: -35px;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
@@ -9744,6 +9762,38 @@ a:hover {
     background: rgba(0, 0, 0, 0.7);
   }
 }
+@font-face {
+  font-family: 'League Gothic';
+  src: url("../fonts/leaguegothic-regular-webfont.eot");
+  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/raleway_thin-webfont.eot");
+  src: url("../fonts/raleway_thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway_thin-webfont.woff") format("woff"), url("../fonts/raleway_thin-webfont.ttf") format("truetype"), url("../fonts/raleway_thin-webfont.svg#raleway_thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Heavy';
+  src: url("../fonts/franklin_gothic_heavy.eot");
+  src: url("../fonts/franklin_gothic_heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/franklin_gothic_heavy.svg#Franklin Gothic Heavy") format("svg"), url("../fonts/franklin_gothic_heavy.woff") format("woff"), url("../fonts/franklin_gothic_heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Junction';
+  src: url("../fonts/junction-webfont.eot");
+  src: url("../fonts/junction-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/junction-webfont.svg#Junction Webfont") format("svg"), url("../fonts/junction-webfont.woff") format("woff"), url("../fonts/junction-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body.page-lia {
   /* 900px and under*/
   /* 480 and */
@@ -9867,6 +9917,13 @@ body.page-bleach .helper-arrow {
 }
 body.page-bleach .helper-arrow:hover {
   bottom: 18;
+}
+body.page-bleach .fixed {
+  top: 137px;
+  left: -32px;
+}
+body.page-bleach .on .fixed {
+  left: 210px;
 }
 body.page-bleach .photos div {
   width: 100%;
@@ -10051,6 +10108,13 @@ body.page-salmon .photos .page8 {
   background-image: url(../images/optimized/salmon09.jpg);
   background-position: 86.4% 52%;
 }
+body.page-salmon .fixed {
+  top: 139px;
+  left: -34px;
+}
+body.page-salmon .on .fixed {
+  left: 210px;
+}
 @media only screen and (max-width: 900px) {
   body.page-salmon .sidebar {
     font-size: 1.6em;
@@ -10138,6 +10202,13 @@ body.page-watercolors .photos .page11 {
   background-image: url(../images/optimized/wc12.jpg);
   background-position: 75% 75%;
 }
+body.page-watercolors .fixed {
+  top: 165px;
+  left: -60px;
+}
+body.page-watercolors .on .fixed {
+  left: 185px;
+}
 @media only screen and (max-width: 900px) {
   body.page-watercolors .sidebar {
     font-size: 1.6em;
@@ -10184,7 +10255,8 @@ body.page-contact {
 }
 body.page-contact html, body.page-contact body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Franklin Gothic Heavy", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  font-weight: bold;
   font-weight: 800;
 }
 body.page-contact .contact-container {
@@ -10285,11 +10357,11 @@ body.page-stories a:hover {
   cursor: pointer;
 }
 body.page-stories .project-title {
-  font-size: 50px;
+  font-size: 3em;
   color: white;
   margin: 0 0 0 0;
   position: relative;
-  text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.6);
 }
 body.page-stories .project-description {
   z-index: 999;
@@ -10309,7 +10381,7 @@ body.page-stories .project-description p.active {
   opacity: 0.6;
 }
 body.page-stories .project-description h2 {
-  opacity: .6;
+  opacity: .7;
   transition: opacity .5s linear;
   line-height: 1;
 }
@@ -10329,7 +10401,7 @@ body.page-stories .fbsection1 .project-description {
 }
 body.page-stories .fbsection2 .project-description {
   position: relative;
-  left: 25%;
+  left: 30%;
   top: 40%;
 }
 body.page-stories .fbsection3 .project-description {

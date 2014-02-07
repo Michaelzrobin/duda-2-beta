@@ -1,8 +1,11 @@
 html, body{
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: "arial", sans-serif;
+        // font-weight: 400;
 }
+
+
+
 //        //
 // GLOBAL //
 //        //
@@ -16,7 +19,17 @@ a{
         cursor: pointer;
     }
 }
+h1, h3, h2{
+    font-family: "Raleway";
+}
+h2{
+    font-size: 2.5em;
+}
 
+p{
+        font-family: "Junction", sans-serif;
+
+}
 
 
 
@@ -52,11 +65,11 @@ opacity: .5;
 //      //
 
 .series-title{
+    font-family: "League Gothic", sans-serif;
     position: fixed;
     right: 9px;
     top: -13px;
-    font-weight: bold;
-    font-size: 4em;
+    font-size: 4.6em;
     color: black;
     opacity: .6;
     z-index: 99999;
@@ -86,7 +99,7 @@ opacity: .5;
 }
 
 .series-description{
-    font-weight: bold;
+    font-family: "Junction", sans-serif;
     position: fixed;
     margin: 0 auto;
     top: 25%;
@@ -107,12 +120,12 @@ opacity: .5;
 }
 
 .back{
+    font-family: "League Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     position: fixed;
     bottom: 3.5%;
     left: 40px;
-    font-size: 1.3em;
+    font-size: 2em;
     color: black;
-    font-weight: bold;
     opacity: .35;
     z-index: 99999;
     transition: 500ms;
@@ -199,7 +212,6 @@ opacity: .5;
 .helper-arrow{
     clear: both;
     font-size: 110px;
-    font-weight: bold;
     color: black;
     opacity: .3;
     position: absolute;
@@ -248,6 +260,7 @@ opacity: .5;
         display:none;
         opacity: 0;
     }
+
 
     .on{
         .fixed{

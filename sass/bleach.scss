@@ -26,6 +26,16 @@ html, body{
     }
 }
 
+.fixed{
+    top: 137px;
+    left: -32px;
+}
+.on{
+    .fixed{
+        left: 210px;
+    }
+}
+
 
 // back to previous page?
 // .back-button{

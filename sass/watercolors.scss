@@ -113,6 +113,16 @@ html, body{
 
     }
 }
+
+.fixed{
+    top: 165px;
+    left: -60px;
+}
+.on{
+    .fixed{
+        left: 185px;
+    }
+}
 //
 // MEDIA QUERIES
 //

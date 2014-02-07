@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+}
+
+.helper-arrow {
+  right: 24px;
+  bottom: 29px;
+}
+.helper-arrow:hover {
+  bottom: 18px;
+}
+
+.photos div {
+  width: 100%;
+  background-position: 73% 50%;
+  background-size: cover;
+  height: 100%;
+}
+.photos .cover {
+  background-image: url(../images/optimized/wc.jpg);
+  position: relative;
+}
+.photos .page1 {
+  background-image: url(../images/optimized/wc1.jpg);
+}
+.photos .page2 {
+  background-image: url(../images/optimized/wc2.jpg);
+  background-position: 83% 100%;
+}
+.photos .page3 {
+  background-image: url(../images/optimized/wc3.jpg);
+}
+.photos .page4 {
+  background-image: url(../images/optimized/wc4.jpg);
+}
+.photos .page5 {
+  background-image: url(../images/optimized/wc6.jpg);
+}
+.photos .page6 {
+  background-image: url(../images/optimized/wc7.jpg);
+}
+.photos .page7 {
+  background-image: url(../images/optimized/wc8.jpg);
+  background-position: 73% 50%;
+}
+.photos .page8 {
+  background-image: url(../images/optimized/wc9.jpg);
+  background-position: 45% 90%;
+}
+.photos .page9 {
+  background-image: url(../images/optimized/wc10.jpg);
+}
+.photos .page10 {
+  background-image: url(../images/optimized/wc11.jpg);
+}
+.photos .page11 {
+  background-image: url(../images/optimized/wc12.jpg);
+  background-position: 75% 75%;
+}
+
+.fixed {
+  top: 165px;
+  left: -60px;
+}
+
+.on .fixed {
+  left: 185px;
+}
+
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+
+  .photos .page2 {
+    background-size: auto 85%;
+  }
+  .photos .page8 {
+    background-position: 70% 50%;
+    background-size: auto 85%;
+  }
+  .photos .page11 {
+    background-position: 70% 50%;
+    background-size: auto 85%;
+  }
+  .photos div {
+    width: 100%;
+    height: 100%;
+    background-size: 85%;
+  }
+}
+/* 480 and */
+@media only screen and (max-width: 480px) {
+  .photos .page2 {
+    background-size: auto 65%;
+  }
+  .photos .page8 {
+    background-position: 70% 50%;
+    background-size: auto 65%;
+  }
+  .photos .page11 {
+    background-position: 70% 50%;
+    background-size: auto 65%;
+  }
+
+  .on .fixed a {
+    color: white;
+  }
+}

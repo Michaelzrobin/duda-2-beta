@@ -101,7 +101,15 @@ body{
 
     }
 }
-
+.fixed{
+    top: 139px;
+    left: -34px;
+}
+.on{
+    .fixed{
+        left: 210px;
+    }
+}
 //
 // MEDIA QUERIES
 //

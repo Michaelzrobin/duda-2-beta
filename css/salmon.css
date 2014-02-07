@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+}
+
+.series-description {
+  top: 30%;
+  left: 40%;
+  width: 46%;
+}
+
+.arrow-container {
+  position: relative;
+  height: 100%;
+  float: right;
+  width: 25%;
+}
+
+.helper-arrow {
+  right: 5px;
+  bottom: 52px;
+  z-index: 99;
+}
+.helper-arrow:hover {
+  bottom: 42px;
+}
+
+body {
+  position: relative;
+}
+
+.play-div {
+  position: fixed;
+  top: -20px;
+  left: 30%;
+  z-index: 99;
+}
+
+.photos div {
+  background-size: 65%;
+  width: 100%;
+  height: 100%;
+}
+.photos .cover {
+  position: relative;
+  background-image: url(../images/optimized/salmon.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page1 {
+  background-image: url(../images/optimized/salmon02.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page2 {
+  background-image: url(../images/optimized/salmon03.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page3 {
+  background-image: url(../images/optimized/salmon04.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page4 {
+  background-image: url(../images/optimized/salmon05.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page5 {
+  background-image: url(../images/optimized/salmon06.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page6 {
+  background-image: url(../images/optimized/salmon07.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page7 {
+  background-image: url(../images/optimized/salmon08.jpg);
+  background-position: 86.4% 52%;
+}
+.photos .page8 {
+  background-image: url(../images/optimized/salmon09.jpg);
+  background-position: 86.4% 52%;
+}
+
+.fixed {
+  top: 139px;
+  left: -34px;
+}
+
+.on .fixed {
+  left: 210px;
+}
+
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    font-size: 1.6em;
+    transition: font-size 1ms ease-in;
+    transition: left 200ms ease-in;
+  }
+}
+/* 320 and */
+@media only screen and (max-width: 480px) {
+  .photos div {
+    width: 100%;
+    height: 100%;
+    background-size: 80%;
+    background-position: 95% 90%;
+  }
+
+  .on .fixed a {
+    color: white;
+  }
+
+  .play-div {
+    transition: 200ms;
+    left: 16%;
+  }
+
+  .hide-play {
+    opacity: .1;
+  }
+}

@@ -17,9 +17,6 @@
 // to everything but nav text
 //
 
-
-
-
 .sidebar{
     background-color: transparent;
     position:fixed;
@@ -30,14 +27,15 @@
     min-width: 325px;
     overflow-x:auto;
     overflow-y:auto;
-    font-family: "Compact Sans Serifs",tahoma,verdana,arial,sans-serif;
-    font-size: 2.4em;
-    font-weight: bold;
-    line-height: 1.1em;
+    font-family: "Raleway";
+    // MAYBE? font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1em;
     color:black;
     transition: 200ms ease-in;
     ul{
-    margin:50px 0 0 30px;
+    margin:50px 0 0 40px;
     }
     a{
         transition-property: opacity;
@@ -64,8 +62,8 @@
 
 .fixed{
     position: fixed;
-    top: 100px;
-    left:0;
+    top: 130px;
+    left:-25px;
     font-size: 1.1em;
     z-index: 99999;
     background-color: none;
@@ -76,18 +74,24 @@
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     a{
-        font-family: helvetica;
-        font-weight: bold;
+        font-family: "Raleway";
+        // font-family: "Helvetica Neue", Arial, sans-serif;
+        font-weight: 800;
         text-decoration: none;
         color: black;
         position: relative;
+        transition: 100ms ease-in;
         opacity: .6;
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         &:hover{
-            font-family: helvetica;
-            font-weight: bold;
+            font-family: "Raleway";
+            // font-family: "Helvetica Neue", Arial, sans-serif;
+            font-weight: 800;
             text-decoration: none;
             color: black;
+            position: relative;
+            transition: 200ms ease-in;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             opacity: .8;
         }
         &:after{
@@ -109,7 +113,7 @@
         display: none;
     }
     .fixed{
-        left: 243px;
+        left: 220px;
     }
 }
 
@@ -139,15 +143,17 @@
 @media only screen and (max-width: 480px) {
     .on{
         .fixed{
-            left: 198px;
+            top: 75;
+            left: 195px;
+            width: 150px;
         }
     }
 
 
 .fixed{
-    top: 103px;
+    top: 108px;
     font-size: 1.2em;
-    left: -35px;
+    left: -65px;
     // -webkit-transform: rotate(0);
     // -moz-transform: rotate(0);
     // -o-transform: rotate(0);
@@ -159,6 +165,7 @@
         }
         .show{
             opacity:1;
+            left: -20px;
         }
         .hide{
             opacity: .9;
@@ -166,7 +173,9 @@
     }
 }
 
+
     .sidebar{
+        top: -35px;
         li{
             a{
                 font-size: 1.3em;
