@@ -68,10 +68,11 @@ opacity: .5;
     font-family: "Raleway";
     position: fixed;
     right: 15px;
-    top: -5px;
-    font-size: 4em;
+    top: 0px;
+    font-size: 3.5em;
     color: black;
     opacity: .6;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     z-index: 99999;
     transition: 500ms;
     .show, .hide{
@@ -126,13 +127,16 @@ opacity: .5;
     position: fixed;
     bottom: 3.5%;
     left: 40px;
-    font-size: 1.8em;
+    font-size: 1.7em;
+    transition: 200ms ease-in;
     color: black;
     opacity: .6;
     z-index: 99999;
     transition: 500ms;
     &:hover{
-        opacity: .8;
+        opacity: 1;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
     }
 
 }

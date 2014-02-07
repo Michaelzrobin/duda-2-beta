@@ -9380,10 +9380,11 @@ p {
   font-family: "Raleway";
   position: fixed;
   right: 15px;
-  top: -5px;
-  font-size: 4em;
+  top: 0px;
+  font-size: 3.5em;
   color: black;
   opacity: .6;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   z-index: 99999;
   transition: 500ms;
 }
@@ -9431,14 +9432,16 @@ p {
   position: fixed;
   bottom: 3.5%;
   left: 40px;
-  font-size: 1.8em;
+  font-size: 1.7em;
+  transition: 200ms ease-in;
   color: black;
   opacity: .6;
   z-index: 99999;
   transition: 500ms;
 }
 .back:hover {
-  opacity: .8;
+  opacity: 1;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .photos {
@@ -9581,13 +9584,13 @@ p {
   margin: 50px 0 0 40px;
 }
 .sidebar a {
-  transition-property: opacity;
-  transition: 400ms;
+  transition: 600ms;
   color: black;
   opacity: .6;
 }
 .sidebar a:hover {
-  opacity: .8;
+  opacity: .7;
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
 }
 
 .show {
@@ -9606,6 +9609,7 @@ p {
   font-size: 1.1em;
   z-index: 99999;
   background-color: none;
+  transition-property: position;
   transition: 200ms ease-in;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -9613,27 +9617,21 @@ p {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.fixed a {
+.fixed span {
   font-family: "Raleway";
   font-weight: 800;
   text-decoration: none;
   color: black;
+  transition: none;
   position: relative;
-  transition: 100ms ease-in;
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.3);
   opacity: .6;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.fixed a:hover {
-  font-family: "Raleway";
-  font-weight: 800;
-  text-decoration: none;
-  color: black;
-  position: relative;
-  transition: 200ms ease-in;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  opacity: .8;
+.fixed span:hover {
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.4);
+  opacity: .7;
 }
-.fixed a:after {
+.fixed span:after {
   content: "";
   padding: 35px 110px 40px 110px;
   position: absolute;
@@ -10470,14 +10468,14 @@ body.page-stories .sidebar a:hover {
   color: white;
   opacity: .9;
 }
-body.page-stories .fixed a {
+body.page-stories .fixed span, body.page-stories .fixed a {
   color: white;
-  opacity: .6;
-  transition: 300ms linear;
+  opacity: .7;
 }
-body.page-stories .fixed a:hover {
+body.page-stories .fixed span:hover, body.page-stories .fixed a:hover {
   color: white;
-  opacity: .9;
+  opacity: .8;
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.4);
 }
 body.page-stories .helper-arrow {
   right: 16px;

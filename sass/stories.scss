@@ -206,14 +206,16 @@ a{
 .artist-name{
 }
 .fixed{
-    a{
+    span, a{
     color:white;
-    opacity: .6;
+    opacity: .7;
+
     // opacity: 1;
-    transition: 300ms linear;
         &:hover{
             color:white;
-            opacity:.9;
+            opacity:.8;
+            text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.4);
+
         }
     }
 }
