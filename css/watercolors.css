@@ -58,6 +58,39 @@ html, body {
   background-position: 75% 75%;
 }
 
+.back a,
+.helper-arrow,
+.series-title,
+.sidebar a,
+.fixed span,
+.fixed a {
+  color: white;
+}
+
+.color-change .series-title {
+  color: black;
+}
+
+.sidebar {
+  min-width: 325px;
+}
+.sidebar a {
+  transition: 300ms linear;
+  opacity: .6;
+}
+.sidebar a:hover {
+  opacity: .9;
+}
+
+.fixed span, .fixed a {
+  transition: 450ms;
+  opacity: .7;
+}
+.fixed span:hover, .fixed a:hover {
+  opacity: 1;
+  text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.7);
+}
+
 .fixed {
   top: 165px;
   left: -60px;

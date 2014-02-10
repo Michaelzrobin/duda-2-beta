@@ -30,15 +30,21 @@ html, body{
     }
 }
 
+
 .fixed{
-    a{
-    color:white;
-    opacity: .6;
+    left: 205px;
+    top: 145px;
+    span, a{
+        transition: 300ms;
+        color:white;
+        opacity: .8;
+
     // opacity: 1;
-    transition: 300ms linear;
         &:hover{
             color:white;
-            opacity:.9;
+            opacity:1;
+            text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.6);
+
         }
     }
 }
@@ -74,13 +80,15 @@ a{
 
 // CONTACT //
 .email{
+        font-family: "Raleway";
         position: fixed;
         top: 55%;
+        opacity: .8;
         left: 31px;
-        font-size: 3em;
+        font-size: 2.5em;
         color: white;
-        font-weight: bold;
         text-align: center;
+        text-transform: uppercase;
     }
 
 
@@ -89,13 +97,11 @@ a{
 // DEFAULT EXPANDED SIDEBAR
 //
 
-.fixed{
-    left: 243px;
-}
+
 
 .on{
     .fixed{
-    left: 0;
+    left: -40px;
     }
 }
 

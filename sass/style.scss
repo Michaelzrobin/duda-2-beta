@@ -52,25 +52,25 @@
 
 
 
-body.page-lia {
+body#page-lia {
     @import 'lia';
 }
-body.page-bleach {
+body#page-bleach {
     @import 'bleach';
 
     &.fullheightversion {
         @import 'bleach-fullheightversion';
     }
 }
-body.page-salmon {
+body#page-salmon {
     @import 'salmon';
 }
-body.page-watercolors {
+body#page-watercolors {
     @import 'watercolors';
 }
-body.page-contact {
+body#page-contact {
     @import 'contact';
 }
-body.page-stories {
+body#page-stories {
     @import 'stories';
 }

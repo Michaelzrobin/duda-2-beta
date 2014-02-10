@@ -9521,6 +9521,30 @@ p {
   cursor: pointer;
 }
 
+#page-buddy .sidebar a:hover {
+  opacity: .8;
+  text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
+}
+#page-buddy .fixed {
+  top: 137px;
+  left: -32px;
+}
+#page-buddy .fixed a {
+  opacity: .8;
+  transition: 600ms;
+}
+#page-buddy .fixed a:hover {
+  opacity: 1;
+}
+#page-buddy .fixed span {
+  transition: 600ms;
+  opacity: .8;
+}
+#page-buddy .fixed span:hover {
+  opacity: 1;
+  text-shadow: 1px 1.25px 0.5px rgba(0, 0, 0, 0.4);
+}
+
 /* 900px and under*/
 @media only screen and (max-width: 900px) {
   .photos div {
@@ -9584,12 +9608,32 @@ p {
   margin: 50px 0 0 40px;
 }
 .sidebar a {
-  transition: 600ms;
+  transition: 450ms;
   color: black;
   opacity: .6;
 }
 .sidebar a:hover {
-  opacity: .7;
+  opacity: .9;
+  text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
+}
+
+#page-emily-duda .current-page-link ul a.artist-name {
+  opacity: 1;
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
+}
+
+#page-stories .current-page-link ul a.work {
+  opacity: 1;
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
+}
+
+#page-objects .current-page-link ul a.objects {
+  opacity: 1;
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
+}
+
+#page-contact .current-page-link ul a.contact {
+  opacity: 1;
   text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
 }
 
@@ -9609,27 +9653,33 @@ p {
   font-size: 1.1em;
   z-index: 99999;
   background-color: none;
-  transition-property: position;
   transition: 200ms ease-in;
-  -webkit-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg) translate3d(0, 0, 0);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+.fixed a {
+  opacity: .7;
+  transition: 400ms;
+}
+.fixed a a:hover {
+  text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
 .fixed span {
+  transition: 400ms;
+  opacity: .9;
   font-family: "Raleway";
   font-weight: 800;
   text-decoration: none;
   color: black;
-  transition: none;
   position: relative;
-  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.3);
-  opacity: .6;
 }
 .fixed span:hover {
-  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.4);
-  opacity: .7;
+  text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.8);
+  opacity: 1;
 }
 .fixed span:after {
   content: "";
@@ -9793,194 +9843,213 @@ p {
   font-style: normal;
 }
 
-body.page-lia {
+body#page-lia {
   /* 900px and under*/
   /* 480 and */
 }
-body.page-lia html, body.page-lia body {
+body#page-lia html, body#page-lia body {
   height: 100%;
 }
-body.page-lia .helper-arrow {
+body#page-lia .helper-arrow {
   right: 24px;
   bottom: 29px;
 }
-body.page-lia .helper-arrow:hover {
+body#page-lia .helper-arrow:hover {
   bottom: 18;
 }
-body.page-lia .photos div {
+body#page-lia .photos div {
   width: 100%;
   background-position: 73% 50%;
   background-size: auto 90%;
   height: 100%;
 }
-body.page-lia .photos .cover {
+body#page-lia .photos .cover {
   background-image: url(../images/optimized/lia.jpg);
   position: relative;
 }
-body.page-lia .photos .page1 {
+body#page-lia .photos .page1 {
   background-image: url(../images/optimized/lia1.jpg);
 }
-body.page-lia .photos .page2 {
+body#page-lia .photos .page2 {
   background-image: url(../images/optimized/lia2.jpg);
   background-position: 73% 50%;
 }
-body.page-lia .photos .page3 {
+body#page-lia .photos .page3 {
   background-image: url(../images/optimized/lia3.jpg);
   background-position: 73% 50%;
 }
-body.page-lia .photos .page4 {
+body#page-lia .photos .page4 {
   background-image: url(../images/optimized/lia4.jpg);
   background-position: 73% 50%;
 }
-body.page-lia .photos .page5 {
+body#page-lia .photos .page5 {
   background-image: url(../images/optimized/lia5.jpg);
 }
-body.page-lia .photos .page6 {
+body#page-lia .photos .page6 {
   background-image: url(../images/optimized/lia6.jpg);
 }
-body.page-lia .photos .page7 {
+body#page-lia .photos .page7 {
   background-image: url(../images/optimized/lia7.jpg);
   background-position: 73% 50%;
 }
-body.page-lia .photos .page8 {
+body#page-lia .photos .page8 {
   background-image: url(../images/optimized/lia8.jpg);
   background-position: 45% 50%;
 }
-body.page-lia .photos .page9 {
+body#page-lia .photos .page9 {
   background-image: url(../images/optimized/lia9.jpg);
 }
-body.page-lia .photos .page10 {
+body#page-lia .photos .page10 {
   background-image: url(../images/optimized/lia10.jpg);
 }
-body.page-lia .photos .page11 {
+body#page-lia .photos .page11 {
   background-image: url(../images/optimized/lia11.jpg);
 }
-body.page-lia .photos .page12 {
+body#page-lia .photos .page12 {
   background-image: url(../images/optimized/lia12.jpg);
 }
 @media only screen and (max-width: 900px) {
-  body.page-lia .sidebar {
+  body#page-lia .sidebar {
     font-size: 1.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
-  body.page-lia .photos .page2 {
+  body#page-lia .photos .page2 {
     background-size: auto 85%;
   }
-  body.page-lia .photos .page8 {
+  body#page-lia .photos .page8 {
     background-position: 70% 50%;
     background-size: auto 85%;
   }
-  body.page-lia .photos .page11 {
+  body#page-lia .photos .page11 {
     background-position: 70% 50%;
     background-size: auto 85%;
   }
-  body.page-lia .photos div {
+  body#page-lia .photos div {
     width: 100%;
     height: 100%;
     background-size: 85%;
   }
 }
 @media only screen and (max-width: 480px) {
-  body.page-lia .photos .page2 {
+  body#page-lia .photos .page2 {
     background-size: auto 65%;
   }
-  body.page-lia .photos .page8 {
+  body#page-lia .photos .page8 {
     background-position: 70% 50%;
     background-size: auto 65%;
   }
-  body.page-lia .photos .page11 {
+  body#page-lia .photos .page11 {
     background-position: 70% 50%;
     background-size: auto 65%;
   }
-  body.page-lia .on .fixed a {
+  body#page-lia .on .fixed a {
     color: white;
   }
 }
 
-body.page-bleach {
+body#page-bleach {
   /* 900px and under*/
   /* 480 and */
 }
-body.page-bleach html, body.page-bleach body {
+body#page-bleach html, body#page-bleach body {
   height: 100%;
 }
-body.page-bleach .series-description {
+body#page-bleach .series-description {
   top: 32%;
   left: 39%;
   width: 45%;
 }
-body.page-bleach .helper-arrow {
+body#page-bleach .helper-arrow {
   right: 33px;
   bottom: 29px;
 }
-body.page-bleach .helper-arrow:hover {
+body#page-bleach .helper-arrow:hover {
   bottom: 18;
 }
-body.page-bleach .fixed {
+body#page-bleach .on .fixed {
+  left: 210px;
+}
+body#page-bleach .sidebar a:hover {
+  opacity: .8;
+  text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
+}
+body#page-bleach .fixed {
   top: 137px;
   left: -32px;
 }
-body.page-bleach .on .fixed {
-  left: 210px;
+body#page-bleach .fixed a {
+  opacity: .8;
+  transition: 600ms;
 }
-body.page-bleach .photos div {
+body#page-bleach .fixed a:hover {
+  opacity: 1;
+}
+body#page-bleach .fixed span {
+  transition: 600ms;
+  opacity: .8;
+}
+body#page-bleach .fixed span:hover {
+  opacity: 1;
+  text-shadow: 1px 1.25px 0.5px rgba(0, 0, 0, 0.4);
+}
+body#page-bleach .photos div {
   width: 100%;
   background-size: 55%;
   height: 100%;
 }
-body.page-bleach .photos .cover {
+body#page-bleach .photos .cover {
   background-image: url(../images/optimized/bleach.jpg);
   background-position: 75% 50%;
   position: relative;
 }
-body.page-bleach .photos .page1 {
+body#page-bleach .photos .page1 {
   background-image: url(../images/optimized/bleach02.jpg);
   background-position: 75% 50%;
 }
-body.page-bleach .photos .page2 {
+body#page-bleach .photos .page2 {
   background-image: url(../images/optimized/bleach03.jpg);
   background-position: 75% 48%;
 }
-body.page-bleach .photos .page3 {
+body#page-bleach .photos .page3 {
   background-image: url(../images/optimized/bleach04.jpg);
   background-position: 75% 50%;
 }
-body.page-bleach .photos .page4 {
+body#page-bleach .photos .page4 {
   background-image: url(../images/optimized/bleach05.jpg);
   background-position: 75% 55%;
 }
-body.page-bleach .photos .page5 {
+body#page-bleach .photos .page5 {
   background-image: url(../images/optimized/bleach06.jpg);
   background-position: 75% 50%;
 }
 @media only screen and (max-width: 900px) {
-  body.page-bleach .sidebar {
+  body#page-bleach .sidebar {
     font-size: 1.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
 }
 @media only screen and (max-width: 480px) {
-  body.page-bleach .photos div {
+  body#page-bleach .photos div {
     width: 100%;
     height: 100%;
     background-size: 85%;
   }
-  body.page-bleach .on .fixed a {
+  body#page-bleach .on .fixed a {
     color: white;
   }
 }
-body.page-bleach.fullheightversion html {
+body#page-bleach.fullheightversion html {
   height: 100%;
 }
-body.page-bleach.fullheightversion .arrow-container {
+body#page-bleach.fullheightversion .arrow-container {
   position: relative;
   height: 100%;
   float: right;
   width: 25%;
 }
-body.page-bleach.fullheightversion .helper-arrow {
+body#page-bleach.fullheightversion .helper-arrow {
   clear: both;
   display: block;
   font-size: 110px;
@@ -9995,374 +10064,430 @@ body.page-bleach.fullheightversion .helper-arrow {
   transition-duration: .4s, .3s;
   transition-timing-function: linear, ease-in;
 }
-body.page-bleach.fullheightversion .helper-arrow:hover {
+body#page-bleach.fullheightversion .helper-arrow:hover {
   opacity: .6;
   bottom: 18;
   cursor: pointer;
 }
-body.page-bleach.fullheightversion .photos div {
+body#page-bleach.fullheightversion .photos div {
   background-size: 60%;
   height: 100;
 }
-body.page-bleach.fullheightversion .photos .cover {
+body#page-bleach.fullheightversion .photos .cover {
   background-image: url(../images/optimized/bleach.jpg);
   background-position: 395px 40px;
   position: relative;
 }
-body.page-bleach.fullheightversion .photos .page1 {
+body#page-bleach.fullheightversion .photos .page1 {
   background-image: url(../images/optimized/bleach02.jpg);
   background-position: 395px 40px;
 }
-body.page-bleach.fullheightversion .photos .page2 {
+body#page-bleach.fullheightversion .photos .page2 {
   background-image: url(../images/optimized/bleach03.jpg);
   background-position: 395px 35px;
 }
-body.page-bleach.fullheightversion .photos .page3 {
+body#page-bleach.fullheightversion .photos .page3 {
   background-image: url(../images/optimized/bleach04.jpg);
   background-position: 395px 40px;
 }
-body.page-bleach.fullheightversion .photos .page4 {
+body#page-bleach.fullheightversion .photos .page4 {
   background-image: url(../images/optimized/bleach05.jpg);
   background-position: 395px 20px;
 }
-body.page-bleach.fullheightversion .photos .page5 {
+body#page-bleach.fullheightversion .photos .page5 {
   background-image: url(../images/optimized/bleach06.jpg);
   background-position: 395px 40px;
 }
 
-body.page-salmon {
+body#page-salmon {
   /* 900px and under*/
   /* 320 and */
 }
-body.page-salmon html {
+body#page-salmon html {
   height: 100%;
 }
-body.page-salmon .series-description {
+body#page-salmon .series-description {
   top: 30%;
   left: 40%;
   width: 46%;
 }
-body.page-salmon .arrow-container {
+body#page-salmon .arrow-container {
   position: relative;
   height: 100%;
   float: right;
   width: 25%;
 }
-body.page-salmon .helper-arrow {
+body#page-salmon .helper-arrow {
   right: 5px;
   bottom: 52px;
   z-index: 99;
 }
-body.page-salmon .helper-arrow:hover {
+body#page-salmon .helper-arrow:hover {
   bottom: 42px;
 }
-body.page-salmon body {
+body#page-salmon body {
   position: relative;
 }
-body.page-salmon .play-div {
+body#page-salmon .play-div {
   position: fixed;
   top: -20px;
   left: 30%;
   z-index: 99;
 }
-body.page-salmon .photos div {
+body#page-salmon .photos div {
   background-size: 65%;
   width: 100%;
   height: 100%;
 }
-body.page-salmon .photos .cover {
+body#page-salmon .photos .cover {
   position: relative;
   background-image: url(../images/optimized/salmon.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page1 {
+body#page-salmon .photos .page1 {
   background-image: url(../images/optimized/salmon02.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page2 {
+body#page-salmon .photos .page2 {
   background-image: url(../images/optimized/salmon03.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page3 {
+body#page-salmon .photos .page3 {
   background-image: url(../images/optimized/salmon04.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page4 {
+body#page-salmon .photos .page4 {
   background-image: url(../images/optimized/salmon05.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page5 {
+body#page-salmon .photos .page5 {
   background-image: url(../images/optimized/salmon06.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page6 {
+body#page-salmon .photos .page6 {
   background-image: url(../images/optimized/salmon07.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page7 {
+body#page-salmon .photos .page7 {
   background-image: url(../images/optimized/salmon08.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .photos .page8 {
+body#page-salmon .photos .page8 {
   background-image: url(../images/optimized/salmon09.jpg);
   background-position: 86.4% 52%;
 }
-body.page-salmon .fixed {
+body#page-salmon .sidebar a:hover {
+  opacity: .8;
+  text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
+}
+body#page-salmon .fixed {
+  top: 137px;
+  left: -32px;
+}
+body#page-salmon .fixed a {
+  opacity: .8;
+  transition: 600ms;
+}
+body#page-salmon .fixed a:hover {
+  opacity: 1;
+}
+body#page-salmon .fixed span {
+  transition: 600ms;
+  opacity: .8;
+}
+body#page-salmon .fixed span:hover {
+  opacity: 1;
+  text-shadow: 1px 1.25px 0.5px rgba(0, 0, 0, 0.4);
+}
+body#page-salmon .fixed {
   top: 139px;
   left: -34px;
 }
-body.page-salmon .on .fixed {
+body#page-salmon .on .fixed {
   left: 210px;
 }
 @media only screen and (max-width: 900px) {
-  body.page-salmon .sidebar {
+  body#page-salmon .sidebar {
     font-size: 1.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
 }
 @media only screen and (max-width: 480px) {
-  body.page-salmon .photos div {
+  body#page-salmon .photos div {
     width: 100%;
     height: 100%;
     background-size: 80%;
     background-position: 95% 90%;
   }
-  body.page-salmon .on .fixed a {
+  body#page-salmon .on .fixed a {
     color: white;
   }
-  body.page-salmon .play-div {
+  body#page-salmon .play-div {
     transition: 200ms;
     left: 16%;
   }
-  body.page-salmon .hide-play {
+  body#page-salmon .hide-play {
     opacity: .1;
   }
 }
 
-body.page-watercolors {
+body#page-watercolors {
   /* 900px and under*/
   /* 480 and */
 }
-body.page-watercolors html, body.page-watercolors body {
+body#page-watercolors html, body#page-watercolors body {
   height: 100%;
 }
-body.page-watercolors .helper-arrow {
+body#page-watercolors .helper-arrow {
   right: 24px;
   bottom: 29px;
 }
-body.page-watercolors .helper-arrow:hover {
+body#page-watercolors .helper-arrow:hover {
   bottom: 18px;
 }
-body.page-watercolors .photos div {
+body#page-watercolors .photos div {
   width: 100%;
   background-position: 73% 50%;
   background-size: cover;
   height: 100%;
 }
-body.page-watercolors .photos .cover {
+body#page-watercolors .photos .cover {
   background-image: url(../images/optimized/wc.jpg);
   position: relative;
 }
-body.page-watercolors .photos .page1 {
+body#page-watercolors .photos .page1 {
   background-image: url(../images/optimized/wc1.jpg);
 }
-body.page-watercolors .photos .page2 {
+body#page-watercolors .photos .page2 {
   background-image: url(../images/optimized/wc2.jpg);
   background-position: 83% 100%;
 }
-body.page-watercolors .photos .page3 {
+body#page-watercolors .photos .page3 {
   background-image: url(../images/optimized/wc3.jpg);
 }
-body.page-watercolors .photos .page4 {
+body#page-watercolors .photos .page4 {
   background-image: url(../images/optimized/wc4.jpg);
 }
-body.page-watercolors .photos .page5 {
+body#page-watercolors .photos .page5 {
   background-image: url(../images/optimized/wc6.jpg);
 }
-body.page-watercolors .photos .page6 {
+body#page-watercolors .photos .page6 {
   background-image: url(../images/optimized/wc7.jpg);
 }
-body.page-watercolors .photos .page7 {
+body#page-watercolors .photos .page7 {
   background-image: url(../images/optimized/wc8.jpg);
   background-position: 73% 50%;
 }
-body.page-watercolors .photos .page8 {
+body#page-watercolors .photos .page8 {
   background-image: url(../images/optimized/wc9.jpg);
   background-position: 45% 90%;
 }
-body.page-watercolors .photos .page9 {
+body#page-watercolors .photos .page9 {
   background-image: url(../images/optimized/wc10.jpg);
 }
-body.page-watercolors .photos .page10 {
+body#page-watercolors .photos .page10 {
   background-image: url(../images/optimized/wc11.jpg);
 }
-body.page-watercolors .photos .page11 {
+body#page-watercolors .photos .page11 {
   background-image: url(../images/optimized/wc12.jpg);
   background-position: 75% 75%;
 }
-body.page-watercolors .fixed {
+body#page-watercolors .back a,
+body#page-watercolors .helper-arrow,
+body#page-watercolors .series-title,
+body#page-watercolors .sidebar a,
+body#page-watercolors .fixed span,
+body#page-watercolors .fixed a {
+  color: white;
+}
+body#page-watercolors .color-change .series-title {
+  color: black;
+}
+body#page-watercolors .sidebar {
+  min-width: 325px;
+}
+body#page-watercolors .sidebar a {
+  transition: 300ms linear;
+  opacity: .6;
+}
+body#page-watercolors .sidebar a:hover {
+  opacity: .9;
+}
+body#page-watercolors .fixed span, body#page-watercolors .fixed a {
+  transition: 450ms;
+  opacity: .7;
+}
+body#page-watercolors .fixed span:hover, body#page-watercolors .fixed a:hover {
+  opacity: 1;
+  text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.7);
+}
+body#page-watercolors .fixed {
   top: 165px;
   left: -60px;
 }
-body.page-watercolors .on .fixed {
+body#page-watercolors .on .fixed {
   left: 185px;
 }
 @media only screen and (max-width: 900px) {
-  body.page-watercolors .sidebar {
+  body#page-watercolors .sidebar {
     font-size: 1.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
-  body.page-watercolors .photos .page2 {
+  body#page-watercolors .photos .page2 {
     background-size: auto 85%;
   }
-  body.page-watercolors .photos .page8 {
+  body#page-watercolors .photos .page8 {
     background-position: 70% 50%;
     background-size: auto 85%;
   }
-  body.page-watercolors .photos .page11 {
+  body#page-watercolors .photos .page11 {
     background-position: 70% 50%;
     background-size: auto 85%;
   }
-  body.page-watercolors .photos div {
+  body#page-watercolors .photos div {
     width: 100%;
     height: 100%;
     background-size: 85%;
   }
 }
 @media only screen and (max-width: 480px) {
-  body.page-watercolors .photos .page2 {
+  body#page-watercolors .photos .page2 {
     background-size: auto 65%;
   }
-  body.page-watercolors .photos .page8 {
+  body#page-watercolors .photos .page8 {
     background-position: 70% 50%;
     background-size: auto 65%;
   }
-  body.page-watercolors .photos .page11 {
+  body#page-watercolors .photos .page11 {
     background-position: 70% 50%;
     background-size: auto 65%;
   }
-  body.page-watercolors .on .fixed a {
+  body#page-watercolors .on .fixed a {
     color: white;
   }
 }
 
-body.page-contact {
+body#page-contact {
   /* 900px and under*/
   /* 320 and */
 }
-body.page-contact html, body.page-contact body {
+body#page-contact html, body#page-contact body {
   height: 100%;
   font-family: "Franklin Gothic Heavy", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
   font-weight: bold;
   font-weight: 800;
 }
-body.page-contact .contact-container {
+body#page-contact .contact-container {
   height: 100%;
   width: 100%;
   background-image: url(../images/optimized/lia1.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
-body.page-contact .sidebar {
+body#page-contact .sidebar {
   min-width: 325px;
 }
-body.page-contact .sidebar a {
+body#page-contact .sidebar a {
   color: white;
   transition: 300ms linear;
   opacity: .6;
 }
-body.page-contact .sidebar a:hover {
+body#page-contact .sidebar a:hover {
   color: white;
   opacity: .9;
 }
-body.page-contact .fixed a {
-  color: white;
-  opacity: .6;
-  transition: 300ms linear;
+body#page-contact .fixed {
+  left: 205px;
+  top: 145px;
 }
-body.page-contact .fixed a:hover {
+body#page-contact .fixed span, body#page-contact .fixed a {
+  transition: 300ms;
   color: white;
-  opacity: .9;
+  opacity: .8;
 }
-body.page-contact a {
+body#page-contact .fixed span:hover, body#page-contact .fixed a:hover {
+  color: white;
+  opacity: 1;
+  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.6);
+}
+body#page-contact a {
   text-decoration: none;
   color: black;
 }
-body.page-contact a:hover {
+body#page-contact a:hover {
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
-body.page-contact .email {
+body#page-contact .email {
+  font-family: "Raleway";
   position: fixed;
   top: 55%;
+  opacity: .8;
   left: 31px;
-  font-size: 3em;
+  font-size: 2.5em;
   color: white;
-  font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
 }
-body.page-contact .fixed {
-  left: 243px;
+body#page-contact .on .fixed {
+  left: -40px;
 }
-body.page-contact .on .fixed {
+body#page-contact .sidebar {
   left: 0;
 }
-body.page-contact .sidebar {
-  left: 0;
-}
-body.page-contact .show {
+body#page-contact .show {
   left: -400px;
 }
 @media only screen and (max-width: 900px) {
-  body.page-contact .sidebar {
+  body#page-contact .sidebar {
     font-size: 1.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
 }
 @media only screen and (max-width: 768px) {
-  body.page-contact .email {
+  body#page-contact .email {
     font-size: 2.5em;
   }
 }
 @media only screen and (max-width: 480px) {
-  body.page-contact .email {
+  body#page-contact .email {
     font-size: 1.8em;
     top: 45%;
     left: 20px;
   }
-  body.page-contact .on .fixed a {
+  body#page-contact .on .fixed a {
     opacity: .9;
   }
 }
 
-body.page-stories {
+body#page-stories {
   /* 900px and under*/
   /* 320 and */
 }
-body.page-stories html, body.page-stories body {
+body#page-stories html, body#page-stories body {
   height: 100%;
 }
-body.page-stories a {
+body#page-stories a {
   text-decoration: none;
   color: black;
 }
-body.page-stories a:hover {
+body#page-stories a:hover {
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
-body.page-stories .project-title {
+body#page-stories .project-title {
   font-size: 3em;
   color: white;
   margin: 0 0 0 0;
   position: relative;
   text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.6);
 }
-body.page-stories .project-description {
+body#page-stories .project-description {
   z-index: 999;
   font-size: 14px;
   color: white;
@@ -10370,261 +10495,271 @@ body.page-stories .project-description {
   height: 100px;
   width: 15%;
 }
-body.page-stories .project-description p {
+body#page-stories .project-description p {
   color: white;
   opacity: 0;
-  transition: opacity 0.5s linear;
-  text-shadow: 0px 2.25px 4.5px rgba(0, 0, 0, 0.7);
+  transition: 600ms ease-in;
+  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
 }
-body.page-stories .project-description p.active {
+body#page-stories .project-description p.active {
   opacity: 0.6;
 }
-body.page-stories .project-description h2 {
-  opacity: .7;
-  transition: opacity .5s linear;
+body#page-stories .project-description p:hover {
+  opacity: 1;
+  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.6);
+}
+body#page-stories .project-description h2 {
+  opacity: .6;
+  transition: 300ms ease-in;
   line-height: 1;
+  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.4);
 }
-body.page-stories .project-description h2:hover, body.page-stories .project-description h2:hover + p {
-  opacity: 0.9;
+body#page-stories .project-description h2:hover {
+  text-shadow: 2.25px 2.25px 6.5px rgba(0, 0, 0, 0.8);
+  opacity: .9;
 }
-body.page-stories .project-description .hide-on-hover {
+body#page-stories .project-description h2:hover, body#page-stories .project-description h2:hover + p {
+  opacity: .9;
+}
+body#page-stories .project-description .hide-on-hover {
   font-size: 15px;
   padding-left: 10px;
   vertical-align: middle;
   transition: .7s;
 }
-body.page-stories .fbsection1 .project-description {
+body#page-stories .fbsection1 .project-description {
   position: relative;
   left: 60%;
   top: 20%;
 }
-body.page-stories .fbsection2 .project-description {
+body#page-stories .fbsection2 .project-description {
   position: relative;
   left: 30%;
   top: 40%;
 }
-body.page-stories .fbsection3 .project-description {
+body#page-stories .fbsection3 .project-description {
   position: relative;
   top: 26%;
   left: 70%;
 }
-body.page-stories .fbsection4 .project-description {
+body#page-stories .fbsection4 .project-description {
   position: relative;
   top: 18%;
   left: 27%;
   width: 35%;
 }
-body.page-stories .fbsection5 .project-description {
+body#page-stories .fbsection5 .project-description {
   position: relative;
   left: 60%;
   top: 30%;
 }
-body.page-stories .stories-photos {
+body#page-stories .stories-photos {
   height: 100%;
   position: relative;
 }
-body.page-stories .stories-photos > div {
+body#page-stories .stories-photos > div {
   position: relative;
   height: 100%;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
-body.page-stories #fbsection1 {
+body#page-stories #fbsection1 {
   background-size: cover;
   height: 100%;
   background-image: url(../images/optimized/bleach.jpg);
 }
-body.page-stories #fbsection2 {
+body#page-stories #fbsection2 {
   height: 100%;
   background-size: cover;
   background-image: url(../images/optimized/previews/watercolor-preview.jpg);
 }
-body.page-stories #fbsection3 {
+body#page-stories #fbsection3 {
   background-size: cover;
   height: 100%;
   background-image: url(../images/optimized/salmon.jpg);
 }
-body.page-stories #fbsection4 {
+body#page-stories #fbsection4 {
   height: 100%;
   background-size: cover;
   background-image: url(../images/optimized/previews/buddy-preview.jpg);
 }
-body.page-stories #fbsection5 {
+body#page-stories #fbsection5 {
   background-size: cover;
   height: 100%;
   background-position: 0px -80px;
   background-image: url(../images/optimized/lia10.jpg);
 }
-body.page-stories .sidebar {
+body#page-stories .sidebar {
   min-width: 325px;
 }
-body.page-stories .sidebar a {
+body#page-stories .sidebar a {
   color: white;
   transition: 300ms linear;
   opacity: .6;
 }
-body.page-stories .sidebar a:hover {
+body#page-stories .sidebar a:hover {
   color: white;
   opacity: .9;
 }
-body.page-stories .fixed span, body.page-stories .fixed a {
-  color: white;
-  opacity: .7;
+body#page-stories .fixed a:hover {
+  text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.8);
+  opacity: 1;
 }
-body.page-stories .fixed span:hover, body.page-stories .fixed a:hover {
+body#page-stories .fixed span, body#page-stories .fixed a {
   color: white;
-  opacity: .8;
-  text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.4);
 }
-body.page-stories .helper-arrow {
+body#page-stories .fixed span:hover, body#page-stories .fixed a:hover {
+  color: white;
+}
+body#page-stories .helper-arrow {
   right: 16px;
   bottom: 0px;
   color: white;
 }
-body.page-stories .helper-arrow:hover {
+body#page-stories .helper-arrow:hover {
   color: white;
   bottom: -12px;
 }
 @media only screen and (max-width: 900px) {
-  body.page-stories .sidebar {
+  body#page-stories .sidebar {
     font-size: 1.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
-  body.page-stories #fbsection1 .project-description {
+  body#page-stories #fbsection1 .project-description {
     left: 50%;
     top: 25%;
     width: 40%;
   }
-  body.page-stories #fbsection1 .project-description .project-title {
+  body#page-stories #fbsection1 .project-description .project-title {
     opacity: .7;
   }
-  body.page-stories #fbsection1 .project-description p {
+  body#page-stories #fbsection1 .project-description p {
     opacity: .8;
   }
-  body.page-stories #fbsection2 .project-description {
+  body#page-stories #fbsection2 .project-description {
     left: 25%;
     top: 55%;
     width: 40%;
   }
-  body.page-stories #fbsection2 .project-description .project-title {
+  body#page-stories #fbsection2 .project-description .project-title {
     opacity: .7;
   }
-  body.page-stories #fbsection2 .project-description p {
+  body#page-stories #fbsection2 .project-description p {
     opacity: .8;
   }
-  body.page-stories #fbsection3 {
+  body#page-stories #fbsection3 {
     background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
   }
-  body.page-stories #fbsection3 .project-description {
+  body#page-stories #fbsection3 .project-description {
     top: 28%;
     left: 27%;
     width: 40%;
   }
-  body.page-stories #fbsection3 .project-description .project-title {
+  body#page-stories #fbsection3 .project-description .project-title {
     opacity: .7;
   }
-  body.page-stories #fbsection3 .project-description p {
+  body#page-stories #fbsection3 .project-description p {
     opacity: .8;
   }
-  body.page-stories #fbsection4 {
+  body#page-stories #fbsection4 {
     background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
     background-color: rgba(255, 255, 255, 0.3);
   }
-  body.page-stories #fbsection4 .project-description {
+  body#page-stories #fbsection4 .project-description {
     top: 24%;
     left: 67%;
     width: 30%;
   }
-  body.page-stories #fbsection4 .project-description .project-title {
+  body#page-stories #fbsection4 .project-description .project-title {
     opacity: .7;
   }
-  body.page-stories #fbsection4 .project-description p {
+  body#page-stories #fbsection4 .project-description p {
     opacity: .8;
   }
-  body.page-stories #fbsection5 .project-description {
+  body#page-stories #fbsection5 .project-description {
     left: 50%;
     top: 25%;
     width: 40%;
   }
-  body.page-stories #fbsection5 .project-description .project-title {
+  body#page-stories #fbsection5 .project-description .project-title {
     opacity: .7;
   }
-  body.page-stories #fbsection5 .project-description p {
+  body#page-stories #fbsection5 .project-description p {
     opacity: .8;
   }
 }
 @media only screen and (max-width: 768px) {
-  body.page-stories #fbsection4 .project-description {
+  body#page-stories #fbsection4 .project-description {
     top: 12%;
     left: 58%;
   }
 }
 @media only screen and (max-width: 480px) {
-  body.page-stories .project-description {
+  body#page-stories .project-description {
     z-index: 0;
   }
-  body.page-stories .on .fixed a {
+  body#page-stories .on .fixed a {
     opacity: .9;
   }
-  body.page-stories #fbsection1 .project-description {
+  body#page-stories #fbsection1 .project-description {
     left: 15%;
     width: 80%;
   }
-  body.page-stories #fbsection2 .project-description {
+  body#page-stories #fbsection2 .project-description {
     left: 15%;
     width: 80%;
   }
-  body.page-stories #fbsection3 .project-description {
+  body#page-stories #fbsection3 .project-description {
     left: 15%;
     width: 80%;
   }
-  body.page-stories #fbsection4 .project-description {
+  body#page-stories #fbsection4 .project-description {
     left: 15%;
     width: 80%;
   }
-  body.page-stories .helper-arrow {
+  body#page-stories .helper-arrow {
     opacity: 0;
   }
 }
 @media only screen and (max-width: 320px) {
-  body.page-stories .helper-arrow {
+  body#page-stories .helper-arrow {
     opacity: .4;
     right: 30%;
   }
-  body.page-stories .project-description .project-title {
+  body#page-stories .project-description .project-title {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   }
-  body.page-stories .project-description p:hover {
+  body#page-stories .project-description p:hover {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: .8;
   }
-  body.page-stories #fbsection1 .project-description {
+  body#page-stories #fbsection1 .project-description {
     width: 80%;
     left: 20%;
     top: 13%;
   }
-  body.page-stories #fbsection2 h2 {
+  body#page-stories #fbsection2 h2 {
     font-size: 2.9em;
   }
-  body.page-stories #fbsection2 .project-description {
+  body#page-stories #fbsection2 .project-description {
     width: 80%;
     left: 20%;
     top: 10%;
   }
-  body.page-stories #fbsection3 {
+  body#page-stories #fbsection3 {
     background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
   }
-  body.page-stories #fbsection3 .project-description {
+  body#page-stories #fbsection3 .project-description {
     left: 20%;
     top: 13%;
     width: 80%;
   }
-  body.page-stories #fbsection4 {
+  body#page-stories #fbsection4 {
     background-image: url(/images/optimized/previews/buddy-alt-cover.jpg);
   }
-  body.page-stories #fbsection4 .project-description {
+  body#page-stories #fbsection4 .project-description {
     left: 20%;
     top: 13%;
     width: 80%;

@@ -78,6 +78,31 @@ body {
   background-position: 86.4% 52%;
 }
 
+.sidebar a:hover {
+  opacity: .8;
+  text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
+}
+
+.fixed {
+  top: 137px;
+  left: -32px;
+}
+.fixed a {
+  opacity: .8;
+  transition: 600ms;
+}
+.fixed a:hover {
+  opacity: 1;
+}
+.fixed span {
+  transition: 600ms;
+  opacity: .8;
+}
+.fixed span:hover {
+  opacity: 1;
+  text-shadow: 1px 1.25px 0.5px rgba(0, 0, 0, 0.4);
+}
+
 .fixed {
   top: 139px;
   left: -34px;

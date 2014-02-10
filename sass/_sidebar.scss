@@ -38,19 +38,35 @@
     margin:50px 0 0 40px;
     }
     a{
-        transition: 600ms;
+        transition: 450ms;
         // text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
         color:black;
         opacity: .6;
         &:hover{
-            opacity: .7;
-        text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
-
+            opacity: .9;
+            text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
         }
     }
 }
 
-.artist-name{
+#page-emily-duda .current-page-link ul a.artist-name{
+    opacity: 1;
+    text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
+
+}
+#page-stories .current-page-link ul a.work{
+    opacity: 1;
+    text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
+
+}
+#page-objects .current-page-link ul a.objects{
+    opacity: 1;
+    text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
+
+}
+#page-contact .current-page-link ul a.contact{
+    opacity: 1;
+    text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -69,27 +85,40 @@
     font-size: 1.1em;
     z-index: 99999;
     background-color: none;
-    transition-property: position;
     transition: 200ms ease-in;
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg)
+   //
+   //(sacrifice sharpness with
+   translate3d( 0, 0, 0);
+   // to fix rotated webfont glitching?)
+   //
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    a{
+        opacity: .7;
+        transition: 400ms;
+        a:hover{
+            text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.8);
+            opacity: 1;
+        }
+    }
     span{
+        transition: 400ms;
+        opacity: .9;
         font-family: "Raleway";
         // font-family: "Helvetica Neue", Arial, sans-serif;
         font-weight: 800;
         text-decoration: none;
         color: black;
-        transition: none;
         position: relative;
-        text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.3);
-        opacity: .6;
         &:hover{
             // font-family: "Helvetica Neue", Arial, sans-serif;
-            text-shadow: 1px 1px 6.5px rgba(0, 0, 0, 0.4);
-            opacity: .7;
+            text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.8);
+            opacity: 1;
+            // text-shadow: 4px 4px 1px rgba(255, 255, 255, 1);
+
         }
         &:after{
             content:"";

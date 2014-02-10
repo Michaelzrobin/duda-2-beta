@@ -114,6 +114,56 @@ html, body{
     }
 }
 
+//
+// BEGIN PAGE SPECIFIC COLORS(white)/SHADOWS/HOVER STATES  (refactor)
+//
+
+.back a,
+.helper-arrow,
+.series-title,
+.sidebar a,
+.fixed span,
+.fixed a {
+    color: white
+}
+
+
+.color-change{
+    .series-title{
+        color: black;
+    }
+}
+.sidebar{
+    // background-color: rgba(0,0,0,.22);
+    min-width: 325px;
+    // box-shadow: 1px 0px 3px rgba(0,0,0,.22);
+    a{
+    transition: 300ms linear;
+    opacity: .6;
+    // opacity: 1;
+        &:hover{
+            // color:white;
+            opacity:.9;
+            // opacity: 1;
+        }
+    }
+}
+
+
+.fixed{
+    span, a{
+    transition: 450ms;
+    opacity: .7;
+    // opacity: 1;
+        &:hover{
+            opacity:1;
+            text-shadow: 1.5px 1.5px 6.5px rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+
+
 .fixed{
     top: 165px;
     left: -60px;
@@ -123,6 +173,12 @@ html, body{
         left: 185px;
     }
 }
+
+//
+// END PAGE-SPECIFIC COLOR CHANGING
+//
+
+
 //
 // MEDIA QUERIES
 //
