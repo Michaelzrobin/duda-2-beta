@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url("/fonts/raleway_thin-webfont.eot");
+  src: url("/fonts/raleway_thin-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/raleway_thin-webfont.woff") format("woff"), url("/fonts/raleway_thin-webfont.ttf") format("truetype"), url("/fonts/raleway_thin-webfont.svg#raleway_thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Junction';
+  src: url("/fonts/junction-webfont.eot");
+  src: url("/fonts/junction-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/junction-webfont.svg#Junction Webfont") format("svg"), url("/fonts/junction-webfont.woff") format("woff"), url("/fonts/junction-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -9525,8 +9541,11 @@ p {
   opacity: .8;
   text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
 }
+#page-buddy .on .fixed {
+  left: 217px;
+}
 #page-buddy .fixed {
-  top: 137px;
+  top: 132px;
   left: -32px;
 }
 #page-buddy .fixed a {
@@ -9811,38 +9830,6 @@ p {
     background: rgba(0, 0, 0, 0.7);
   }
 }
-@font-face {
-  font-family: 'League Gothic';
-  src: url("../fonts/leaguegothic-regular-webfont.eot");
-  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url("../fonts/raleway_thin-webfont.eot");
-  src: url("../fonts/raleway_thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway_thin-webfont.woff") format("woff"), url("../fonts/raleway_thin-webfont.ttf") format("truetype"), url("../fonts/raleway_thin-webfont.svg#raleway_thin") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Franklin Gothic Heavy';
-  src: url("../fonts/franklin_gothic_heavy.eot");
-  src: url("../fonts/franklin_gothic_heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/franklin_gothic_heavy.svg#Franklin Gothic Heavy") format("svg"), url("../fonts/franklin_gothic_heavy.woff") format("woff"), url("../fonts/franklin_gothic_heavy.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Junction';
-  src: url("../fonts/junction-webfont.eot");
-  src: url("../fonts/junction-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/junction-webfont.svg#Junction Webfont") format("svg"), url("../fonts/junction-webfont.woff") format("woff"), url("../fonts/junction-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body#page-lia {
   /* 900px and under*/
   /* 480 and */
@@ -10039,64 +10026,6 @@ body#page-bleach .photos .page5 {
   body#page-bleach .on .fixed a {
     color: white;
   }
-}
-body#page-bleach.fullheightversion html {
-  height: 100%;
-}
-body#page-bleach.fullheightversion .arrow-container {
-  position: relative;
-  height: 100%;
-  float: right;
-  width: 25%;
-}
-body#page-bleach.fullheightversion .helper-arrow {
-  clear: both;
-  display: block;
-  font-size: 110px;
-  font-weight: bold;
-  color: black;
-  opacity: .3;
-  position: absolute;
-  right: 33px;
-  bottom: 28;
-  z-index: 1;
-  transition-property: opacity, bottom;
-  transition-duration: .4s, .3s;
-  transition-timing-function: linear, ease-in;
-}
-body#page-bleach.fullheightversion .helper-arrow:hover {
-  opacity: .6;
-  bottom: 18;
-  cursor: pointer;
-}
-body#page-bleach.fullheightversion .photos div {
-  background-size: 60%;
-  height: 100;
-}
-body#page-bleach.fullheightversion .photos .cover {
-  background-image: url(../images/optimized/bleach.jpg);
-  background-position: 395px 40px;
-  position: relative;
-}
-body#page-bleach.fullheightversion .photos .page1 {
-  background-image: url(../images/optimized/bleach02.jpg);
-  background-position: 395px 40px;
-}
-body#page-bleach.fullheightversion .photos .page2 {
-  background-image: url(../images/optimized/bleach03.jpg);
-  background-position: 395px 35px;
-}
-body#page-bleach.fullheightversion .photos .page3 {
-  background-image: url(../images/optimized/bleach04.jpg);
-  background-position: 395px 40px;
-}
-body#page-bleach.fullheightversion .photos .page4 {
-  background-image: url(../images/optimized/bleach05.jpg);
-  background-position: 395px 20px;
-}
-body#page-bleach.fullheightversion .photos .page5 {
-  background-image: url(../images/optimized/bleach06.jpg);
-  background-position: 395px 40px;
 }
 
 body#page-salmon {
@@ -10498,19 +10427,21 @@ body#page-stories .project-description {
 body#page-stories .project-description p {
   color: white;
   opacity: 0;
-  transition: 600ms ease-in;
+  transition: 400ms ease-in;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
 }
 body#page-stories .project-description p.active {
-  opacity: 0.6;
+  opacity: 0.5;
+  transition-delay: 50ms;
 }
 body#page-stories .project-description p:hover {
-  opacity: 1;
+  transition: 450ms ease-in;
+  opacity: .8;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.6);
 }
 body#page-stories .project-description h2 {
   opacity: .6;
-  transition: 300ms ease-in;
+  transition: 600ms ease-in;
   line-height: 1;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.4);
 }
@@ -10519,13 +10450,16 @@ body#page-stories .project-description h2:hover {
   opacity: .9;
 }
 body#page-stories .project-description h2:hover, body#page-stories .project-description h2:hover + p {
-  opacity: .9;
+  opacity: .8;
 }
 body#page-stories .project-description .hide-on-hover {
   font-size: 15px;
   padding-left: 10px;
   vertical-align: middle;
   transition: .7s;
+}
+body#page-stories .fbsection1 p {
+  opacity: .5;
 }
 body#page-stories .fbsection1 .project-description {
   position: relative;
@@ -10545,7 +10479,7 @@ body#page-stories .fbsection3 .project-description {
 body#page-stories .fbsection4 .project-description {
   position: relative;
   top: 18%;
-  left: 27%;
+  left: 345px;
   width: 35%;
 }
 body#page-stories .fbsection5 .project-description {

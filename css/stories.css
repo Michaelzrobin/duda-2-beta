@@ -31,19 +31,21 @@ a:hover {
 .project-description p {
   color: white;
   opacity: 0;
-  transition: 600ms ease-in;
+  transition: 400ms ease-in;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
 }
 .project-description p.active {
-  opacity: 0.6;
+  opacity: 0.5;
+  transition-delay: 50ms;
 }
 .project-description p:hover {
-  opacity: 1;
+  transition: 450ms ease-in;
+  opacity: .8;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.6);
 }
 .project-description h2 {
   opacity: .6;
-  transition: 300ms ease-in;
+  transition: 600ms ease-in;
   line-height: 1;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.4);
 }
@@ -52,13 +54,17 @@ a:hover {
   opacity: .9;
 }
 .project-description h2:hover, .project-description h2:hover + p {
-  opacity: .9;
+  opacity: .8;
 }
 .project-description .hide-on-hover {
   font-size: 15px;
   padding-left: 10px;
   vertical-align: middle;
   transition: .7s;
+}
+
+.fbsection1 p {
+  opacity: .5;
 }
 
 .fbsection1 .project-description {
@@ -82,7 +88,7 @@ a:hover {
 .fbsection4 .project-description {
   position: relative;
   top: 18%;
-  left: 27%;
+  left: 345px;
   width: 35%;
 }
 

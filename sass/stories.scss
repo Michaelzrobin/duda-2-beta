@@ -61,26 +61,31 @@ a{
     p {
         color: white;
         opacity: 0;
-        transition: 600ms ease-in;
+        transition: 400ms ease-in;
         text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
         &.active {
-            opacity: 0.6;
+            opacity: 0.5;
+            transition-delay: 50ms;
+
         }
         &:hover{
-            opacity: 1;
+            transition: 450ms ease-in;
+            opacity: .8;
             text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.6);
         }
     }
+
+
     h2{
         opacity: .6;
-        transition: 300ms ease-in;
+        transition: 600ms ease-in;
         line-height: 1;
         text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.4);
         &:hover {
             text-shadow: 2.25px 2.25px 6.5px rgba(0, 0, 0, 0.8);
             opacity: .9;
             &, & + p {
-                opacity: .9;
+                opacity: .8;
             }
         }
 
@@ -104,6 +109,9 @@ a{
         vertical-align:middle;
         transition: .7s;
     }
+}
+.fbsection1 p{
+    opacity:.5;
 }
 
 .fbsection1{
@@ -132,7 +140,7 @@ a{
     .project-description{
         position: relative;
         top: 18%;
-        left: 27%;
+        left: 345px;
         width: 35%;
     }
 }

@@ -15,12 +15,12 @@ $(function() {
 
     $(".screen-wrapper").waypoint(function () {
         var $this = $(this);
-        var $projectDesctiptions = $(".project-description p");
+        var $projectDesctiptions = $(".project-description p.waypoint");
 
         $projectDesctiptions.toggleClass("active", false);
 
         $this
-            .find(".project-description p")
+            .find(".project-description p.waypoint")
             .toggleClass("active", true);
 
     });

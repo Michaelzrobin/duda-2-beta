@@ -251,8 +251,13 @@ opacity: .5;
         }
 
     }
+    .on{
+        .fixed{
+            left: 217px;
+        }
+    }
     .fixed{
-        top: 137px;
+        top: 132px;
         left: -32px;
         a{
             opacity: .8;
