@@ -9986,28 +9986,28 @@ body#page-bleach .photos div {
   height: 100%;
 }
 body#page-bleach .photos .cover {
-  background-image: url(../images/optimized/bleach.jpg);
+  background-image: url(/images/optimized/bleach.jpg);
   background-position: 75% 50%;
   position: relative;
 }
 body#page-bleach .photos .page1 {
-  background-image: url(../images/optimized/bleach02.jpg);
+  background-image: url(/images/optimized/bleach02.jpg);
   background-position: 75% 50%;
 }
 body#page-bleach .photos .page2 {
-  background-image: url(../images/optimized/bleach03.jpg);
+  background-image: url(/images/optimized/bleach03.jpg);
   background-position: 75% 48%;
 }
 body#page-bleach .photos .page3 {
-  background-image: url(../images/optimized/bleach04.jpg);
+  background-image: url(/images/optimized/bleach04.jpg);
   background-position: 75% 50%;
 }
 body#page-bleach .photos .page4 {
-  background-image: url(../images/optimized/bleach05.jpg);
+  background-image: url(/images/optimized/bleach05.jpg);
   background-position: 75% 55%;
 }
 body#page-bleach .photos .page5 {
-  background-image: url(../images/optimized/bleach06.jpg);
+  background-image: url(/images/optimized/bleach06.jpg);
   background-position: 75% 50%;
 }
 @media only screen and (max-width: 900px) {
@@ -10431,26 +10431,26 @@ body#page-stories .project-description p {
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
 }
 body#page-stories .project-description p.active {
-  opacity: 0.5;
+  opacity: 0.6;
   transition-delay: 50ms;
 }
 body#page-stories .project-description p:hover {
   transition: 450ms ease-in;
-  opacity: .8;
-  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.6);
+  opacity: .9;
+  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.7);
 }
 body#page-stories .project-description h2 {
-  opacity: .6;
-  transition: 600ms ease-in;
+  opacity: .7;
+  transition: 400ms ease-in;
   line-height: 1;
-  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
 }
 body#page-stories .project-description h2:hover {
   text-shadow: 2.25px 2.25px 6.5px rgba(0, 0, 0, 0.8);
-  opacity: .9;
+  opacity: 1;
 }
-body#page-stories .project-description h2:hover, body#page-stories .project-description h2:hover + p {
-  opacity: .8;
+body#page-stories .project-description h2:hover + p {
+  opacity: .9;
 }
 body#page-stories .project-description .hide-on-hover {
   font-size: 15px;

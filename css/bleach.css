@@ -51,28 +51,28 @@ html, body {
   height: 100%;
 }
 .photos .cover {
-  background-image: url(../images/optimized/bleach.jpg);
+  background-image: url(/images/optimized/bleach.jpg);
   background-position: 75% 50%;
   position: relative;
 }
 .photos .page1 {
-  background-image: url(../images/optimized/bleach02.jpg);
+  background-image: url(/images/optimized/bleach02.jpg);
   background-position: 75% 50%;
 }
 .photos .page2 {
-  background-image: url(../images/optimized/bleach03.jpg);
+  background-image: url(/images/optimized/bleach03.jpg);
   background-position: 75% 48%;
 }
 .photos .page3 {
-  background-image: url(../images/optimized/bleach04.jpg);
+  background-image: url(/images/optimized/bleach04.jpg);
   background-position: 75% 50%;
 }
 .photos .page4 {
-  background-image: url(../images/optimized/bleach05.jpg);
+  background-image: url(/images/optimized/bleach05.jpg);
   background-position: 75% 55%;
 }
 .photos .page5 {
-  background-image: url(../images/optimized/bleach06.jpg);
+  background-image: url(/images/optimized/bleach06.jpg);
   background-position: 75% 50%;
 }
 

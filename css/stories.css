@@ -35,26 +35,26 @@ a:hover {
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
 }
 .project-description p.active {
-  opacity: 0.5;
+  opacity: 0.6;
   transition-delay: 50ms;
 }
 .project-description p:hover {
   transition: 450ms ease-in;
-  opacity: .8;
-  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.6);
+  opacity: .9;
+  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.7);
 }
 .project-description h2 {
-  opacity: .6;
-  transition: 600ms ease-in;
+  opacity: .7;
+  transition: 400ms ease-in;
   line-height: 1;
-  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
 }
 .project-description h2:hover {
   text-shadow: 2.25px 2.25px 6.5px rgba(0, 0, 0, 0.8);
-  opacity: .9;
+  opacity: 1;
 }
-.project-description h2:hover, .project-description h2:hover + p {
-  opacity: .8;
+.project-description h2:hover + p {
+  opacity: .9;
 }
 .project-description .hide-on-hover {
   font-size: 15px;
