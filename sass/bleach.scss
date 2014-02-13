@@ -179,11 +179,26 @@ html, body{
 }
     .on{
         .fixed{
-            a{
-                color:white;
-            }
+            top: 110px;
+            left: 155px;
+            width: 184px;
         }
     }
+
+
+.fixed{
+    top: 110px;
+    left: -65px;
+    a{
+        .show{
+            opacity:1;
+            left: -20px;
+        }
+        .hide{
+            opacity: .9;
+        }
+    }
+}
 }
 
 

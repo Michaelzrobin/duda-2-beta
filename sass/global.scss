@@ -299,6 +299,10 @@ opacity: .5;
         background-size: 85%;
         }
     }
+
+    .series-title{
+        color: black!important;
+    }
 }
 
 // 480 and under
@@ -319,7 +323,12 @@ opacity: .5;
             }
         }
     }
+    .back{
+        font-size:1em;
+        left: 10px;
+    }
 }
+
 // 320 and under
 @media only screen and (max-width: 320px) {
 .on{
@@ -335,6 +344,10 @@ opacity: .5;
 
     .fixed{
         margin-left: -15px;
+    }
+    .back{
+
+        left: 2px;
     }
 
 }

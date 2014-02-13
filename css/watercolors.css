@@ -124,6 +124,14 @@ html, body {
     height: 100%;
     background-size: 85%;
   }
+
+  .back a,
+  .series-title,
+  .sidebar a,
+  .fixed span,
+  .fixed a {
+    color: black;
+  }
 }
 /* 480 and */
 @media only screen and (max-width: 480px) {

@@ -191,26 +191,35 @@ html, body{
         transition: font-size 1ms ease-in;
         transition: left 200ms ease-in;
     }
-.photos{
-        .page2{
-            background-size: auto 85%;
-        }
+    .photos{
+            .page2{
+                background-size: auto 85%;
+            }
 
-        .page8{
-            background-position: 70% 50%;
-            background-size: auto 85%;
-        }
+            .page8{
+                background-position: 70% 50%;
+                background-size: auto 85%;
+            }
 
-        .page11{
-            background-position: 70% 50%;
-            background-size: auto 85%;
-        }
-    div{
-        width: 100%;
-        height: 100%;
-        background-size: 85%;
+            .page11{
+                background-position: 70% 50%;
+                background-size: auto 85%;
+            }
+            div{
+                width: 100%;
+                height: 100%;
+                background-size: 85%;
+            }
     }
-}
+
+    .back a,
+    .series-title,
+    .sidebar a,
+    .fixed span,
+    .fixed a {
+        color: black
+    }
+
 
 }
 

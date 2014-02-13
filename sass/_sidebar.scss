@@ -154,7 +154,8 @@
 
 @media only screen and (max-width: 900px) {
     .sidebar{
-        font-size: 1.6em;
+        font: black!important;
+        font-size: 2.6em;
         transition: font-size 1ms ease-in;
         transition: left 200ms ease-in;
     }
@@ -166,29 +167,21 @@
     }
 }
 
+
 @media only screen and (max-width: 480px) {
     .on{
         .fixed{
-            top: 75;
-            left: 195px;
-            width: 150px;
+            top: 110px;
+            left: 155px;
+            width: 184px;
         }
     }
 
 
 .fixed{
-    top: 108px;
-    font-size: 1.2em;
-    left: -65px;
-    // -webkit-transform: rotate(0);
-    // -moz-transform: rotate(0);
-    // -o-transform: rotate(0);
-    // -ms-transform: rotate(0);
-    // transform: rotate(0);
+    top: 110px;
+    left: -55px;
     a{
-        &:hover{
-            opacity: .9;
-        }
         .show{
             opacity:1;
             left: -20px;
@@ -201,16 +194,13 @@
 
 
     .sidebar{
-        top: -35px;
+        top: -25px;
         li{
             a{
-                font-size: 1.3em;
+                font-size: 1em;
                 line-height: 1.3em;
                 color:white;
                 opacity: .9;
-                &:hover{
-                    opacity:1;
-                }
             }
         }
         transition: font-size 1ms ease-in;
@@ -233,7 +223,7 @@
         transition: 80ms;
         }
         .screen{
-        background: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.8);
         }
     }
 }
@@ -242,16 +232,7 @@
 
 
 .fixed{
-    left: -20px;
-    // -webkit-transform: rotate(0);
-    // -moz-transform: rotate(0);
-    // -o-transform: rotate(0);
-    // -ms-transform: rotate(0);
-    // transform: rotate(0);
     a{
-        &:hover{
-            opacity: .9;
-        }
         .show{
             opacity:.9;
         }
@@ -261,16 +242,12 @@
 }
 
     .sidebar{
-        top: 0px;
         ul{
             margin-left: 12px;
             li{
                 a{
                     color:white;
                     opacity: .9;
-                    &:hover{
-                        opacity:1;
-                    }
                 }
             }
         }

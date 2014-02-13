@@ -9578,6 +9578,10 @@ p {
   .photos div {
     background-size: 85%;
   }
+
+  .series-title {
+    color: black !important;
+  }
 }
 @media only screen and (max-width: 480px) {
   .mobile-only {
@@ -9592,6 +9596,11 @@ p {
   .on .fixed a {
     color: white;
   }
+
+  .back {
+    font-size: 1em;
+    left: 10px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .on .fixed a {
@@ -9604,6 +9613,10 @@ p {
 
   .fixed {
     margin-left: -15px;
+  }
+
+  .back {
+    left: 2px;
   }
 }
 .sidebar {
@@ -9720,7 +9733,8 @@ p {
 
 @media only screen and (max-width: 900px) {
   .sidebar {
-    font-size: 1.6em;
+    font: black !important;
+    font-size: 2.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
@@ -9731,18 +9745,14 @@ p {
 }
 @media only screen and (max-width: 480px) {
   .on .fixed {
-    top: 75;
-    left: 195px;
-    width: 150px;
+    top: 110px;
+    left: 155px;
+    width: 184px;
   }
 
   .fixed {
-    top: 108px;
-    font-size: 1.2em;
-    left: -65px;
-  }
-  .fixed a:hover {
-    opacity: .9;
+    top: 110px;
+    left: -55px;
   }
   .fixed a .show {
     opacity: 1;
@@ -9753,18 +9763,15 @@ p {
   }
 
   .sidebar {
-    top: -35px;
+    top: -25px;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
   .sidebar li a {
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1.3em;
     color: white;
     opacity: .9;
-  }
-  .sidebar li a:hover {
-    opacity: 1;
   }
 
   .screen {
@@ -9782,22 +9789,15 @@ p {
     transition: 80ms;
   }
   .on .screen {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 @media only screen and (max-width: 320px) {
-  .fixed {
-    left: -20px;
-  }
-  .fixed a:hover {
-    opacity: .9;
-  }
   .fixed a .show {
     opacity: .9;
   }
 
   .sidebar {
-    top: 0px;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
@@ -9807,9 +9807,6 @@ p {
   .sidebar ul li a {
     color: white;
     opacity: .9;
-  }
-  .sidebar ul li a:hover {
-    opacity: 1;
   }
 
   .screen {
@@ -10023,8 +10020,21 @@ body#page-bleach .photos .page5 {
     height: 100%;
     background-size: 85%;
   }
-  body#page-bleach .on .fixed a {
-    color: white;
+  body#page-bleach .on .fixed {
+    top: 110px;
+    left: 155px;
+    width: 184px;
+  }
+  body#page-bleach .fixed {
+    top: 110px;
+    left: -65px;
+  }
+  body#page-bleach .fixed a .show {
+    opacity: 1;
+    left: -20px;
+  }
+  body#page-bleach .fixed a .hide {
+    opacity: .9;
   }
 }
 
@@ -10279,6 +10289,13 @@ body#page-watercolors .on .fixed {
     width: 100%;
     height: 100%;
     background-size: 85%;
+  }
+  body#page-watercolors .back a,
+  body#page-watercolors .series-title,
+  body#page-watercolors .sidebar a,
+  body#page-watercolors .fixed span,
+  body#page-watercolors .fixed a {
+    color: black;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -10557,7 +10574,7 @@ body#page-stories .helper-arrow:hover {
 }
 @media only screen and (max-width: 900px) {
   body#page-stories .sidebar {
-    font-size: 1.6em;
+    font-size: 2em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }

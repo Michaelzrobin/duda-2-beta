@@ -236,6 +236,10 @@ p {
   .photos div {
     background-size: 85%;
   }
+
+  .series-title {
+    color: black !important;
+  }
 }
 @media only screen and (max-width: 480px) {
   .mobile-only {
@@ -250,6 +254,11 @@ p {
   .on .fixed a {
     color: white;
   }
+
+  .back {
+    font-size: 1em;
+    left: 10px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .on .fixed a {
@@ -262,5 +271,9 @@ p {
 
   .fixed {
     margin-left: -15px;
+  }
+
+  .back {
+    left: 2px;
   }
 }
