@@ -9702,19 +9702,44 @@ p {
 
 @media only screen and (max-width: 900px) {
   .sidebar {
-    font: black !important;
     font-size: 2.6em;
     transition: font-size 1ms ease-in;
     transition: left 200ms ease-in;
   }
+  .sidebar a {
+    color: white;
+  }
 
   .on .fixed {
-    left: 148px;
+    left: 185px;
+  }
+  .on .fixed a, .on .fixed span {
+    color: white;
+  }
+
+  .screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 300ms;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .on .helper-arrow {
+    opacity: 0;
+    transition: 80ms;
+  }
+  .on .screen {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
   }
 }
 @media only screen and (max-width: 480px) {
   .fixed {
     width: 200px;
+    top: 118px;
     left: -55px;
   }
   .fixed a .show {
@@ -9769,7 +9794,7 @@ p {
     transition: left 200ms ease-in;
   }
   .sidebar ul {
-    margin-left: 12px;
+    margin-left: 24px;
   }
   .sidebar ul li a {
     color: white;
@@ -10003,7 +10028,7 @@ body#page-salmon .play-div {
   position: fixed;
   top: -20px;
   left: 30%;
-  z-index: 99;
+  z-index: 9999;
 }
 body#page-salmon .photos div {
   background-size: 65%;
@@ -10078,19 +10103,11 @@ body#page-salmon .on .fixed {
   left: 210px;
 }
 @media only screen and (max-width: 900px) {
-  body#page-salmon .sidebar {
-    font-size: 1.6em;
-    transition: font-size 1ms ease-in;
-    transition: left 200ms ease-in;
+  body#page-salmon .play-div {
+    left: 20%;
   }
 }
 @media only screen and (max-width: 480px) {
-  body#page-salmon .photos div {
-    width: 100%;
-    height: 100%;
-    background-size: 80%;
-    background-position: 95% 90%;
-  }
   body#page-salmon .on .fixed a {
     color: white;
   }
@@ -10201,27 +10218,6 @@ body#page-watercolors .on .fixed {
   left: 185px;
 }
 @media only screen and (max-width: 900px) {
-  body#page-watercolors .sidebar {
-    font-size: 1.6em;
-    transition: font-size 1ms ease-in;
-    transition: left 200ms ease-in;
-  }
-  body#page-watercolors .photos .page2 {
-    background-size: auto 85%;
-  }
-  body#page-watercolors .photos .page8 {
-    background-position: 70% 50%;
-    background-size: auto 85%;
-  }
-  body#page-watercolors .photos .page11 {
-    background-position: 70% 50%;
-    background-size: auto 85%;
-  }
-  body#page-watercolors .photos div {
-    width: 100%;
-    height: 100%;
-    background-size: 85%;
-  }
   body#page-watercolors .back a,
   body#page-watercolors .series-title,
   body#page-watercolors .sidebar a,
@@ -10231,19 +10227,12 @@ body#page-watercolors .on .fixed {
   }
 }
 @media only screen and (max-width: 480px) {
-  body#page-watercolors .photos .page2 {
-    background-size: auto 65%;
-  }
-  body#page-watercolors .photos .page8 {
-    background-position: 70% 50%;
-    background-size: auto 65%;
-  }
-  body#page-watercolors .photos .page11 {
-    background-position: 70% 50%;
-    background-size: auto 65%;
-  }
-  body#page-watercolors .on .fixed a {
+  body#page-watercolors .sidebar a {
     color: white;
+  }
+  body#page-watercolors .photos .page2, body#page-watercolors .photos .page8 {
+    background-size: contain;
+    background-position: 73% 50%;
   }
 }
 
@@ -10505,11 +10494,6 @@ body#page-stories .helper-arrow:hover {
   bottom: -12px;
 }
 @media only screen and (max-width: 900px) {
-  body#page-stories .sidebar {
-    font-size: 2em;
-    transition: font-size 1ms ease-in;
-    transition: left 200ms ease-in;
-  }
   body#page-stories #fbsection1 .project-description {
     left: 50%;
     top: 25%;
@@ -10650,14 +10634,28 @@ body#page-stories .helper-arrow:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  body#page-bleach .series-description, body#page-salmon .series-description, body#page-watercolors .series-description, body#page-buddy .series-description {
+    position: fixed;
+    margin: 0 auto;
+    font-size: .9em;
+    top: 5%;
+    left: 15%;
+    width: 80%;
+  }
+  body#page-bleach .series-title, body#page-salmon .series-title, body#page-watercolors .series-title, body#page-buddy .series-title {
+    font-size: 1.9em;
+    top: -3px;
+  }
+  body#page-bleach .series-title .show, body#page-bleach .series-title .hide, body#page-salmon .series-title .show, body#page-salmon .series-title .hide, body#page-watercolors .series-title .show, body#page-watercolors .series-title .hide, body#page-buddy .series-title .show, body#page-buddy .series-title .hide {
+    vertical-align: middle;
+  }
   body#page-bleach .helper-arrow, body#page-salmon .helper-arrow, body#page-watercolors .helper-arrow, body#page-buddy .helper-arrow {
-    bottom: 0;
+    bottom: 15px;
     top: none;
   }
   body#page-bleach .photos div, body#page-salmon .photos div, body#page-watercolors .photos div, body#page-buddy .photos div {
-    width: 100%;
-    height: 100%;
     background-size: 85%;
+    background-position: 73% 50%;
   }
   body#page-bleach .mobile-only, body#page-salmon .mobile-only, body#page-watercolors .mobile-only, body#page-buddy .mobile-only {
     display: block;
@@ -10666,9 +10664,13 @@ body#page-stories .helper-arrow:hover {
     display: block;
     opacity: 0;
   }
+  body#page-bleach .sidebar, body#page-salmon .sidebar, body#page-watercolors .sidebar, body#page-buddy .sidebar {
+    top: -30px;
+  }
   body#page-bleach .fixed, body#page-salmon .fixed, body#page-watercolors .fixed, body#page-buddy .fixed {
-    top: 117px;
-    left: -65px;
+    width: 260px;
+    top: 139px;
+    left: -100px;
   }
   body#page-bleach .fixed .show, body#page-salmon .fixed .show, body#page-watercolors .fixed .show, body#page-buddy .fixed .show {
     opacity: 1;
@@ -10678,7 +10680,7 @@ body#page-stories .helper-arrow:hover {
     opacity: .9;
   }
   body#page-bleach .on .fixed, body#page-salmon .on .fixed, body#page-watercolors .on .fixed, body#page-buddy .on .fixed {
-    left: 205px;
+    left: 170px;
   }
   body#page-bleach .on .fixed a, body#page-bleach .on .fixed span, body#page-salmon .on .fixed a, body#page-salmon .on .fixed span, body#page-watercolors .on .fixed a, body#page-watercolors .on .fixed span, body#page-buddy .on .fixed a, body#page-buddy .on .fixed span {
     color: white;
@@ -10689,10 +10691,19 @@ body#page-stories .helper-arrow:hover {
   body#page-bleach .back, body#page-salmon .back, body#page-watercolors .back, body#page-buddy .back {
     font-size: 1em;
     left: 10px;
+    bottom: 0;
   }
 }
 @media only screen and (max-width: 320px) {
+  body#page-bleach .fixed, body#page-salmon .fixed, body#page-watercolors .fixed, body#page-buddy .fixed {
+    top: 150px;
+    left: -100px;
+    width: 260px;
+  }
   body#page-bleach .on .fixed, body#page-salmon .on .fixed, body#page-watercolors .on .fixed, body#page-buddy .on .fixed {
-    left: 175px;
+    left: 165px;
+  }
+  body#page-bleach .sidebar, body#page-salmon .sidebar, body#page-watercolors .sidebar, body#page-buddy .sidebar {
+    top: -22px;
   }
 }

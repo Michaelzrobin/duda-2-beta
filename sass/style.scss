@@ -56,16 +56,31 @@ body#page-stories {
 
 @media only screen and (max-width: 480px) {
     body{
+
         &#page-bleach, &#page-salmon, &#page-watercolors, &#page-buddy{
+            .series-description{
+                position: fixed;
+                margin: 0 auto;
+                font-size: .9em;
+                top: 5%;
+                left: 15%;
+                width: 80%;
+            }
+            .series-title{
+            .show, .hide{
+                vertical-align: middle;
+            }
+                font-size: 1.9em;
+                top: -3px;
+            }
             .helper-arrow{
-                bottom: 0;
+                bottom: 15px;
                 top: none;
             }
             .photos{
                 div{
-                    width: 100%;
-                    height: 100%;
                     background-size: 85%;
+                    background-position: 73% 50%;
                 }
             }
 
@@ -76,10 +91,13 @@ body#page-stories {
                 display:block;
                 opacity: 0;
             }
-
+            .sidebar{
+                top: -30px;
+            }
             .fixed{
-                top: 117px;
-                left: -65px;
+                width: 260px;
+                top: 139px;
+                left: -100px;
                     .show{
                         opacity:1;
                         left: -20px;
@@ -92,7 +110,7 @@ body#page-stories {
 
             .on{
                 .fixed{
-                    left: 205px;
+                    left: 170px;
                     a, span{
                         color:white;
                     }
@@ -107,6 +125,7 @@ body#page-stories {
             .back{
                 font-size:1em;
                 left: 10px;
+                bottom: 0;
             }
         }
     }
@@ -116,10 +135,18 @@ body#page-stories {
 @media only screen and (max-width: 320px) {
     body{
         &#page-bleach, &#page-salmon, &#page-watercolors, &#page-buddy{
+            .fixed{
+                top: 150px;
+                left: -100px;
+                width: 260px;
+            }
             .on{
                 .fixed{
-                    left: 175px;
+                    left: 165px;
                 }
+            }
+            .sidebar{
+                top:-22px;
             }
         }
     }

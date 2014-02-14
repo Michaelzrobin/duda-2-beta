@@ -102,29 +102,6 @@ html, body {
 
 /* 900px and under*/
 @media only screen and (max-width: 900px) {
-  .sidebar {
-    font-size: 1.6em;
-    transition: font-size 1ms ease-in;
-    transition: left 200ms ease-in;
-  }
-
-  .photos .page2 {
-    background-size: auto 85%;
-  }
-  .photos .page8 {
-    background-position: 70% 50%;
-    background-size: auto 85%;
-  }
-  .photos .page11 {
-    background-position: 70% 50%;
-    background-size: auto 85%;
-  }
-  .photos div {
-    width: 100%;
-    height: 100%;
-    background-size: 85%;
-  }
-
   .back a,
   .series-title,
   .sidebar a,
@@ -135,19 +112,12 @@ html, body {
 }
 /* 480 and */
 @media only screen and (max-width: 480px) {
-  .photos .page2 {
-    background-size: auto 65%;
-  }
-  .photos .page8 {
-    background-position: 70% 50%;
-    background-size: auto 65%;
-  }
-  .photos .page11 {
-    background-position: 70% 50%;
-    background-size: auto 65%;
+  .sidebar a {
+    color: white;
   }
 
-  .on .fixed a {
-    color: white;
+  .photos .page2, .photos .page8 {
+    background-size: contain;
+    background-position: 73% 50%;
   }
 }
