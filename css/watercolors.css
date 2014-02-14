@@ -107,7 +107,7 @@ html, body {
   .sidebar a,
   .fixed span,
   .fixed a {
-    color: black;
+    color: white;
   }
 }
 /* 480 and */
@@ -116,8 +116,19 @@ html, body {
     color: white;
   }
 
-  .photos .page2, .photos .page8 {
+  .back a {
+    color: black;
+    padding-top: 20px;
+    opacity: 1;
+  }
+
+  .photos .page2, .photos .page8, .photos .page11 {
     background-size: contain;
     background-position: 73% 50%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .photos .page2, .photos .page8, .photos .page11 {
+    background-size: 85%;
   }
 }

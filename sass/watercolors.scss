@@ -191,7 +191,7 @@ html, body{
     .sidebar a,
     .fixed span,
     .fixed a {
-        color: black
+        color: white
     }
 }
 
@@ -201,14 +201,28 @@ html, body{
     .sidebar a{
         color:white;
     }
+    .back a{
+        color: black;
+        padding-top: 20px;
+        opacity:1;
+    }
 
 
 .photos{
-    .page2,.page8 {
+    .page2,.page8, .page11 {
         background-size: contain;
         background-position: 73% 50%;
 }
 }
 }
+
+@media only screen and (max-width: 320px) {
+    .photos{
+        .page2, .page8, .page11{
+            background-size: 85%;
+        }
+    }
+}
+
 
 

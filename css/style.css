@@ -9580,12 +9580,20 @@ p {
   }
 
   .series-title {
-    color: black !important;
+    color: black;
+  }
+
+  .back {
+    opacity: .9;
   }
 }
 @media only screen and (max-width: 320px) {
   .back {
-    left: 2px;
+    opacity: .9;
+  }
+  .back a {
+    padding: 14px;
+    margin: -14px;
   }
 }
 .sidebar {
@@ -9670,6 +9678,7 @@ p {
   opacity: 1;
 }
 .fixed span {
+  -webkit-font-smoothing: antialiased;
   transition: 400ms;
   opacity: .9;
   font-family: "Raleway";
@@ -10223,16 +10232,26 @@ body#page-watercolors .on .fixed {
   body#page-watercolors .sidebar a,
   body#page-watercolors .fixed span,
   body#page-watercolors .fixed a {
-    color: black;
+    color: white;
   }
 }
 @media only screen and (max-width: 480px) {
   body#page-watercolors .sidebar a {
     color: white;
   }
-  body#page-watercolors .photos .page2, body#page-watercolors .photos .page8 {
+  body#page-watercolors .back a {
+    color: black;
+    padding-top: 20px;
+    opacity: 1;
+  }
+  body#page-watercolors .photos .page2, body#page-watercolors .photos .page8, body#page-watercolors .photos .page11 {
     background-size: contain;
     background-position: 73% 50%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body#page-watercolors .photos .page2, body#page-watercolors .photos .page8, body#page-watercolors .photos .page11 {
+    background-size: 85%;
   }
 }
 
@@ -10642,7 +10661,13 @@ body#page-stories .helper-arrow:hover {
     left: 15%;
     width: 80%;
   }
+  body#page-bleach .fixed a, body#page-bleach .fixed span, body#page-salmon .fixed a, body#page-salmon .fixed span, body#page-watercolors .fixed a, body#page-watercolors .fixed span, body#page-buddy .fixed a, body#page-buddy .fixed span {
+    color: black;
+    opacity: .8;
+    -webkit-font-smoothing: antialiased;
+  }
   body#page-bleach .series-title, body#page-salmon .series-title, body#page-watercolors .series-title, body#page-buddy .series-title {
+    color: black;
     font-size: 1.9em;
     top: -3px;
   }
@@ -10691,7 +10716,11 @@ body#page-stories .helper-arrow:hover {
   body#page-bleach .back, body#page-salmon .back, body#page-watercolors .back, body#page-buddy .back {
     font-size: 1em;
     left: 10px;
-    bottom: 0;
+    bottom: 5;
+  }
+  body#page-bleach .back a, body#page-salmon .back a, body#page-watercolors .back a, body#page-buddy .back a {
+    padding: 14px;
+    margin: -14px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -10705,5 +10734,8 @@ body#page-stories .helper-arrow:hover {
   }
   body#page-bleach .sidebar, body#page-salmon .sidebar, body#page-watercolors .sidebar, body#page-buddy .sidebar {
     top: -22px;
+  }
+  body#page-bleach .back, body#page-salmon .back, body#page-watercolors .back, body#page-buddy .back {
+    left: 0;
   }
 }

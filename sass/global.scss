@@ -301,8 +301,11 @@ opacity: .5;
     }
 
     .series-title{
-        color: black!important;
+        color: black;
     }
+    .back{
+    opacity:.9;
+}
 }
 
 // 480 and under
@@ -313,8 +316,11 @@ opacity: .5;
 
 
     .back{
-
-        left: 2px;
+        opacity: .9;
+        a{
+            padding:14px;
+            margin: -14px;
+        }
     }
 
 }

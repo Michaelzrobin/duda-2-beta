@@ -56,7 +56,6 @@ body#page-stories {
 
 @media only screen and (max-width: 480px) {
     body{
-
         &#page-bleach, &#page-salmon, &#page-watercolors, &#page-buddy{
             .series-description{
                 position: fixed;
@@ -66,7 +65,15 @@ body#page-stories {
                 left: 15%;
                 width: 80%;
             }
+            .fixed{
+                a, span{
+                    color: black;
+                    opacity:.8;
+                    -webkit-font-smoothing: antialiased;
+                  }
+            }
             .series-title{
+                color: black;
             .show, .hide{
                 vertical-align: middle;
             }
@@ -125,9 +132,16 @@ body#page-stories {
             .back{
                 font-size:1em;
                 left: 10px;
-                bottom: 0;
+                bottom: 5;
+                a{
+                    padding: 14px;
+                    margin: -14px;
+                }
+
+
             }
         }
+
     }
 }
 
@@ -148,6 +162,12 @@ body#page-stories {
             .sidebar{
                 top:-22px;
             }
+
+            .back{
+                    left: 0;
+
+            }
+
         }
     }
 }

@@ -105,6 +105,8 @@
         }
     }
     span{
+                            -webkit-font-smoothing: antialiased;
+
         transition: 400ms;
         opacity: .9;
         font-family: "Raleway";

@@ -238,11 +238,19 @@ p {
   }
 
   .series-title {
-    color: black !important;
+    color: black;
+  }
+
+  .back {
+    opacity: .9;
   }
 }
 @media only screen and (max-width: 320px) {
   .back {
-    left: 2px;
+    opacity: .9;
+  }
+  .back a {
+    padding: 14px;
+    margin: -14px;
   }
 }
