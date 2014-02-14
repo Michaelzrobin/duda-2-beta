@@ -1,9 +1,10 @@
 $(function() {
 
-    $(".fixed, .sidebar").on('click', function() {
+    $(".fixed, .sidebar, .screen").on('click', function() {
         $('.sidebar').toggleClass('show');
         $('.toggle-it, .screen-wrapper').toggleClass('on');
         $('.play-div').toggleClass('hide-play');
+        $('.plus-to-minus').toggleClass('fade');
     });
 
     $('.series-title, .description-screen').on('click', function() {

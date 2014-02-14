@@ -241,38 +241,7 @@ p {
     color: black !important;
   }
 }
-@media only screen and (max-width: 480px) {
-  .mobile-only {
-    display: block;
-  }
-
-  .not-mobile {
-    display: none;
-    opacity: 0;
-  }
-
-  .on .fixed a {
-    color: white;
-  }
-
-  .back {
-    font-size: 1em;
-    left: 10px;
-  }
-}
 @media only screen and (max-width: 320px) {
-  .on .fixed a {
-    color: white;
-  }
-
-  .link-spanner {
-    z-index: 1;
-  }
-
-  .fixed {
-    margin-left: -15px;
-  }
-
   .back {
     left: 2px;
   }

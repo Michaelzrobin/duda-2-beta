@@ -169,17 +169,11 @@
 
 
 @media only screen and (max-width: 480px) {
-    .on{
-        .fixed{
-            top: 110px;
-            left: 155px;
-            width: 184px;
-        }
-    }
+
 
 
 .fixed{
-    top: 110px;
+    width: 200px;
     left: -55px;
     a{
         .show{
@@ -224,6 +218,7 @@
         }
         .screen{
         background: rgba(0,0,0,.8);
+        z-index: 999;
         }
     }
 }
@@ -232,6 +227,7 @@
 
 
 .fixed{
+    margin-left: -15px;
     a{
         .show{
             opacity:.9;

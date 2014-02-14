@@ -9583,38 +9583,7 @@ p {
     color: black !important;
   }
 }
-@media only screen and (max-width: 480px) {
-  .mobile-only {
-    display: block;
-  }
-
-  .not-mobile {
-    display: none;
-    opacity: 0;
-  }
-
-  .on .fixed a {
-    color: white;
-  }
-
-  .back {
-    font-size: 1em;
-    left: 10px;
-  }
-}
 @media only screen and (max-width: 320px) {
-  .on .fixed a {
-    color: white;
-  }
-
-  .link-spanner {
-    z-index: 1;
-  }
-
-  .fixed {
-    margin-left: -15px;
-  }
-
   .back {
     left: 2px;
   }
@@ -9744,14 +9713,8 @@ p {
   }
 }
 @media only screen and (max-width: 480px) {
-  .on .fixed {
-    top: 110px;
-    left: 155px;
-    width: 184px;
-  }
-
   .fixed {
-    top: 110px;
+    width: 200px;
     left: -55px;
   }
   .fixed a .show {
@@ -9790,9 +9753,13 @@ p {
   }
   .on .screen {
     background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
   }
 }
 @media only screen and (max-width: 320px) {
+  .fixed {
+    margin-left: -15px;
+  }
   .fixed a .show {
     opacity: .9;
   }
@@ -9934,7 +9901,6 @@ body#page-lia .photos .page12 {
 
 body#page-bleach {
   /* 900px and under*/
-  /* 480 and */
 }
 body#page-bleach html, body#page-bleach body {
   height: 100%;
@@ -9951,16 +9917,12 @@ body#page-bleach .helper-arrow {
 body#page-bleach .helper-arrow:hover {
   bottom: 18;
 }
-body#page-bleach .on .fixed {
-  left: 210px;
-}
 body#page-bleach .sidebar a:hover {
   opacity: .8;
   text-shadow: 1px 1.25px 6.5px rgba(0, 0, 0, 0.4);
 }
 body#page-bleach .fixed {
   top: 137px;
-  left: -32px;
 }
 body#page-bleach .fixed a {
   opacity: .8;
@@ -10006,36 +9968,6 @@ body#page-bleach .photos .page4 {
 body#page-bleach .photos .page5 {
   background-image: url(/images/optimized/bleach06.jpg);
   background-position: 75% 50%;
-}
-@media only screen and (max-width: 900px) {
-  body#page-bleach .sidebar {
-    font-size: 1.6em;
-    transition: font-size 1ms ease-in;
-    transition: left 200ms ease-in;
-  }
-}
-@media only screen and (max-width: 480px) {
-  body#page-bleach .photos div {
-    width: 100%;
-    height: 100%;
-    background-size: 85%;
-  }
-  body#page-bleach .on .fixed {
-    top: 110px;
-    left: 155px;
-    width: 184px;
-  }
-  body#page-bleach .fixed {
-    top: 110px;
-    left: -65px;
-  }
-  body#page-bleach .fixed a .show {
-    opacity: 1;
-    left: -20px;
-  }
-  body#page-bleach .fixed a .hide {
-    opacity: .9;
-  }
 }
 
 body#page-salmon {
@@ -10714,5 +10646,53 @@ body#page-stories .helper-arrow:hover {
     left: 20%;
     top: 13%;
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body#page-bleach .helper-arrow, body#page-salmon .helper-arrow, body#page-watercolors .helper-arrow, body#page-buddy .helper-arrow {
+    bottom: 0;
+    top: none;
+  }
+  body#page-bleach .photos div, body#page-salmon .photos div, body#page-watercolors .photos div, body#page-buddy .photos div {
+    width: 100%;
+    height: 100%;
+    background-size: 85%;
+  }
+  body#page-bleach .mobile-only, body#page-salmon .mobile-only, body#page-watercolors .mobile-only, body#page-buddy .mobile-only {
+    display: block;
+  }
+  body#page-bleach .not-mobile, body#page-salmon .not-mobile, body#page-watercolors .not-mobile, body#page-buddy .not-mobile {
+    display: block;
+    opacity: 0;
+  }
+  body#page-bleach .fixed, body#page-salmon .fixed, body#page-watercolors .fixed, body#page-buddy .fixed {
+    top: 117px;
+    left: -65px;
+  }
+  body#page-bleach .fixed .show, body#page-salmon .fixed .show, body#page-watercolors .fixed .show, body#page-buddy .fixed .show {
+    opacity: 1;
+    left: -20px;
+  }
+  body#page-bleach .fixed .hide, body#page-salmon .fixed .hide, body#page-watercolors .fixed .hide, body#page-buddy .fixed .hide {
+    opacity: .9;
+  }
+  body#page-bleach .on .fixed, body#page-salmon .on .fixed, body#page-watercolors .on .fixed, body#page-buddy .on .fixed {
+    left: 205px;
+  }
+  body#page-bleach .on .fixed a, body#page-bleach .on .fixed span, body#page-salmon .on .fixed a, body#page-salmon .on .fixed span, body#page-watercolors .on .fixed a, body#page-watercolors .on .fixed span, body#page-buddy .on .fixed a, body#page-buddy .on .fixed span {
+    color: white;
+  }
+  body#page-bleach .fade .screen-title, body#page-salmon .fade .screen-title, body#page-watercolors .fade .screen-title, body#page-buddy .fade .screen-title {
+    z-index: 0;
+  }
+  body#page-bleach .back, body#page-salmon .back, body#page-watercolors .back, body#page-buddy .back {
+    font-size: 1em;
+    left: 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body#page-bleach .on .fixed, body#page-salmon .on .fixed, body#page-watercolors .on .fixed, body#page-buddy .on .fixed {
+    left: 175px;
   }
 }
