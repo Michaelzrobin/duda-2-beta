@@ -281,6 +281,32 @@ opacity: .5;
 //
 // MEDIA QUERIES
 //
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+    .photos{
+        div{
+            background-attachment: scroll;
+            background-size: 90%;
+        }
+    }
+    .link-spanner{
+        z-index:1;
+    }
+    .photos{
+        div{
+        background-size: 85%;
+        }
+    }
+
+    .series-title{
+        color: black;
+    }
+    .back{
+    opacity:.9;
+}
+}
 
 /* 900px and under*/
 // resizing sidebar
@@ -307,6 +333,7 @@ opacity: .5;
     opacity:.9;
 }
 }
+
 
 // 480 and under
 

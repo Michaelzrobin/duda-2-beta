@@ -179,6 +179,7 @@ a:hover {
 /* 900px and under*/
 @media only screen and (max-width: 900px) {
   #fbsection1 .project-description {
+    position: absolute;
     left: 50%;
     top: 25%;
     width: 40%;
@@ -191,6 +192,7 @@ a:hover {
   }
 
   #fbsection2 .project-description {
+    position: absolute;
     left: 25%;
     top: 55%;
     width: 40%;
@@ -206,6 +208,7 @@ a:hover {
     background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
   }
   #fbsection3 .project-description {
+    position: absolute;
     top: 28%;
     left: 27%;
     width: 40%;
@@ -222,6 +225,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
   #fbsection4 .project-description {
+    position: absolute;
     top: 24%;
     left: 67%;
     width: 30%;
@@ -234,6 +238,7 @@ a:hover {
   }
 
   #fbsection5 .project-description {
+    position: absolute;
     left: 50%;
     top: 25%;
     width: 40%;

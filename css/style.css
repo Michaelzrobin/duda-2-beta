@@ -9564,6 +9564,29 @@ p {
   text-shadow: 1px 1.25px 0.5px rgba(0, 0, 0, 0.4);
 }
 
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .photos div {
+    background-attachment: scroll;
+    background-size: 90%;
+  }
+
+  .link-spanner {
+    z-index: 1;
+  }
+
+  .photos div {
+    background-size: 85%;
+  }
+
+  .series-title {
+    color: black;
+  }
+
+  .back {
+    opacity: .9;
+  }
+}
 /* 900px and under*/
 @media only screen and (max-width: 900px) {
   .photos div {
@@ -10514,6 +10537,7 @@ body#page-stories .helper-arrow:hover {
 }
 @media only screen and (max-width: 900px) {
   body#page-stories #fbsection1 .project-description {
+    position: absolute;
     left: 50%;
     top: 25%;
     width: 40%;
@@ -10525,6 +10549,7 @@ body#page-stories .helper-arrow:hover {
     opacity: .8;
   }
   body#page-stories #fbsection2 .project-description {
+    position: absolute;
     left: 25%;
     top: 55%;
     width: 40%;
@@ -10539,6 +10564,7 @@ body#page-stories .helper-arrow:hover {
     background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
   }
   body#page-stories #fbsection3 .project-description {
+    position: absolute;
     top: 28%;
     left: 27%;
     width: 40%;
@@ -10554,6 +10580,7 @@ body#page-stories .helper-arrow:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }
   body#page-stories #fbsection4 .project-description {
+    position: absolute;
     top: 24%;
     left: 67%;
     width: 30%;
@@ -10565,6 +10592,7 @@ body#page-stories .helper-arrow:hover {
     opacity: .8;
   }
   body#page-stories #fbsection5 .project-description {
+    position: absolute;
     left: 50%;
     top: 25%;
     width: 40%;
