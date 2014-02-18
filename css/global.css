@@ -222,6 +222,29 @@ p {
   text-shadow: 1px 1.25px 0.5px rgba(0, 0, 0, 0.4);
 }
 
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .photos div {
+    background-attachment: scroll;
+    background-size: 90%;
+  }
+
+  .link-spanner {
+    z-index: 1;
+  }
+
+  .photos div {
+    background-size: 85%;
+  }
+
+  .series-title {
+    color: black;
+  }
+
+  .back {
+    opacity: .9;
+  }
+}
 /* 900px and under*/
 @media only screen and (max-width: 900px) {
   .photos div {
