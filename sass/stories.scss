@@ -279,7 +279,7 @@ a{
 //
 
 /* 900px and under*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     // .sidebar{
     //     font-size: 2em;
     //     transition: font-size 1ms ease-in;
@@ -323,8 +323,8 @@ a{
         background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
         .project-description{
             position: absolute;
-        top: 28%;
-        left: 27%;
+            top: 28%;
+            left: 27%;
             width: 40%;
             .project-title{
             opacity:.7;
@@ -341,9 +341,9 @@ a{
         background-color: rgba(255,255,255,.3);
         .project-description{
             position: absolute;
-        top: 24%;
-        left: 67%;
-        width: 30%;
+            top: 24%;
+            left: 67%;
+            width: 30%;
             .project-title{
                 opacity:.7;
             }

@@ -177,7 +177,7 @@ a:hover {
 }
 
 /* 900px and under*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   #fbsection1 .project-description {
     position: absolute;
     left: 50%;

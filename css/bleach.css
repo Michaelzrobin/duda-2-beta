@@ -48,7 +48,6 @@ html, body {
 .photos .cover {
   background-image: url(/images/optimized/bleach.jpg);
   background-position: 75% 50%;
-  position: relative;
 }
 .photos .page1 {
   background-image: url(/images/optimized/bleach02.jpg);
