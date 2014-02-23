@@ -19,10 +19,10 @@ html, body{
 
 
 .helper-arrow{
-    right: 33px;
+    right: 13px;
     bottom: 29px;
     &:hover{
-        bottom: 18;
+        bottom: 18px;
     }
 }
 
@@ -106,43 +106,82 @@ html, body{
     }
 
     .cover{
-        background-image: url(/images/optimized/bleach.jpg);
+        background-image: url(/images/optimized/bleach.png);
         background-position: 75% 50%;
 
 
     }
     .page1{
-        background-image: url(/images/optimized/bleach02.jpg);
+        background-image: url(/images/optimized/bleach02.png);
         background-position: 75% 50%;
         // position: relative;
 
 
     }
     .page2{
-        background-image: url(/images/optimized/bleach03.jpg);
+        background-image: url(/images/optimized/bleach03.png);
         background-position: 75% 48%;
         // position: relative;
 
     }
     .page3{
-        background-image: url(/images/optimized/bleach04.jpg);
+        background-image: url(/images/optimized/bleach04.png);
         background-position: 75% 50%;
         // position: relative;
 
     }
     .page4{
-        background-image: url(/images/optimized/bleach05.jpg);
+        background-image: url(/images/optimized/bleach05.png);
         background-position: 75% 55%;
         // position: relative;
 
     }
     .page5{
-        background-image: url(/images/optimized/bleach06.jpg);
+        background-image: url(/images/optimized/bleach06.png);
         background-position: 75% 50%;
         // position: relative;
 
     }
 }
+
+//
+// MEDIA QUERIES
+//
+
+@media only screen
+and (max-width : 1024px){
+    .photos{
+        div.cover,div.page1,div.page2,div.page3,div.page4,div.page5{
+            background-attachment: scroll;
+            background-size: 65%;
+            position: relative;
+        }
+    }
+    .link-spanner{
+        z-index:1;
+    }
+
+    .series-title{
+        color: black;
+    }
+    .back{
+    opacity:.9;
+    }
+}
+
+@media only screen
+and (max-width : 900px){
+    .photos{
+        div.cover,div.page1,div.page2,div.page3,div.page4,div.page5{
+        height: 90%;
+        width: auto;
+        }
+    }
+}
+
+
+
+
 
 //
 // MEDIA QUERIES

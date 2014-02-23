@@ -9,11 +9,11 @@ html, body {
 }
 
 .helper-arrow {
-  right: 33px;
+  right: 13px;
   bottom: 29px;
 }
 .helper-arrow:hover {
-  bottom: 18;
+  bottom: 18px;
 }
 
 .sidebar a:hover {
@@ -46,28 +46,53 @@ html, body {
   height: 100%;
 }
 .photos .cover {
-  background-image: url(/images/optimized/bleach.jpg);
+  background-image: url(/images/optimized/bleach.png);
   background-position: 75% 50%;
 }
 .photos .page1 {
-  background-image: url(/images/optimized/bleach02.jpg);
+  background-image: url(/images/optimized/bleach02.png);
   background-position: 75% 50%;
 }
 .photos .page2 {
-  background-image: url(/images/optimized/bleach03.jpg);
+  background-image: url(/images/optimized/bleach03.png);
   background-position: 75% 48%;
 }
 .photos .page3 {
-  background-image: url(/images/optimized/bleach04.jpg);
+  background-image: url(/images/optimized/bleach04.png);
   background-position: 75% 50%;
 }
 .photos .page4 {
-  background-image: url(/images/optimized/bleach05.jpg);
+  background-image: url(/images/optimized/bleach05.png);
   background-position: 75% 55%;
 }
 .photos .page5 {
-  background-image: url(/images/optimized/bleach06.jpg);
+  background-image: url(/images/optimized/bleach06.png);
   background-position: 75% 50%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .photos div.cover, .photos div.page1, .photos div.page2, .photos div.page3, .photos div.page4, .photos div.page5 {
+    background-attachment: scroll;
+    background-size: 65%;
+    position: relative;
+  }
+
+  .link-spanner {
+    z-index: 1;
+  }
+
+  .series-title {
+    color: black;
+  }
+
+  .back {
+    opacity: .9;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .photos div.cover, .photos div.page1, .photos div.page2, .photos div.page3, .photos div.page4, .photos div.page5 {
+    height: 90%;
+    width: auto;
+  }
+}
 /* 900px and under*/

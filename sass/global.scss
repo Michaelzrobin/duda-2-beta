@@ -47,6 +47,7 @@ p{
 .mobile-only{
     display: none;
 }
+
 .not-mobile{
     display: block;
 }
@@ -166,42 +167,41 @@ opacity: .5;
         background-repeat:no-repeat;
         background-position: 81% 45%;
         background-size: 70%;
-
     }
 
 
 // INSERT PHOTOS HERE
 
     .cover{
-        background-image: url(../images/optimized/buddy.jpg);
+        background-image: url(../images/optimized/buddy.png);
     }
     .page1{
-        background-image: url(../images/optimized/buddy01.jpg);
+        background-image: url(../images/optimized/buddy01.png);
 
     }
     .page2{
-        background-image: url(../images/optimized/buddy02.jpg);
+        background-image: url(../images/optimized/buddy02.png);
         background-position: 83% ;
 
     }
     .page3{
-        background-image: url(../images/optimized/buddy03.jpg);
+        background-image: url(../images/optimized/buddy03.png);
     }
     .page4{
-        background-image: url(../images/optimized/buddy04.jpg);
+        background-image: url(../images/optimized/buddy04.png);
     }
     .page5{
-        background-image: url(../images/optimized/buddy05.jpg);
+        background-image: url(../images/optimized/buddy05.png);
     }
     .page6{
-        background-image: url(../images/optimized/buddy06.jpg);
+        background-image: url(../images/optimized/buddy06.png);
     }
     .page7{
-        background-image: url(../images/optimized/buddy07.jpg);
+        background-image: url(../images/optimized/buddy07.png);
         background-position: 83% 44%;
 }
     .page8{
-        background-image: url(../images/optimized/buddy08.jpg);
+        background-image: url(../images/optimized/buddy08.png);
         background-position: 83% ;
 
     }
@@ -282,32 +282,12 @@ opacity: .5;
 // MEDIA QUERIES
 //
 /* iPads (landscape) ----------- */
-@media only screen
-and (max-width : 1020px){
-    body#page-bleach{
-        .photos{
-        div{
-            background-attachment: scroll;
-            background-size: 55%;
-            position: relative;
-        }
-    }
-    .link-spanner{
-        z-index:1;
-    }
 
-    .series-title{
-        color: black;
-    }
-    .back{
-    opacity:.9;
-}
-}
-}
+
 
 /* 900px and under*/
 // resizing sidebar
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     .photos{
         div{
             background-attachment: scroll;
@@ -338,7 +318,7 @@ and (max-width : 1020px){
         opacity: .9;
         a{
             padding:14px;
-            margin: -14px;
+            margin: -10px;
         }
     }
 

@@ -176,6 +176,10 @@ a:hover {
   bottom: -12px;
 }
 
+.last-arrow:hover {
+  bottom: 6px;
+}
+
 /* 900px and under*/
 @media only screen and (max-width: 1200px) {
   #fbsection1 .project-description {

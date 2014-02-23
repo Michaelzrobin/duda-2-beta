@@ -19,6 +19,7 @@
 }
 // libs
 @import 'libs/font-awesome/font-awesome';
+@import 'libs/elegant-icons';
 @import 'libs/meyer-reset';
 @import 'libs/bootstrap';
 @import 'libs/sc-player';
@@ -32,7 +33,9 @@
 
 // specific
 
-
+.icon_plus, .icon_minus-06{
+    font-size: .8em;
+}
 
 body#page-lia {
     @import 'lia';
@@ -52,6 +55,7 @@ body#page-contact {
 body#page-stories {
     @import 'stories';
 }
+
 
 
 @media only screen and (max-width: 480px) {
@@ -132,7 +136,7 @@ body#page-stories {
             .back{
                 font-size:1em;
                 left: 10px;
-                bottom: 5;
+                bottom: 10;
                 a{
                     padding: 14px;
                     margin: -14px;
@@ -164,7 +168,10 @@ body#page-stories {
             }
 
             .back{
-                    left: 0;
+                a{
+                    margin: -1px;
+                }
+                left: 0;
 
             }
 
