@@ -33,6 +33,24 @@ a{
 
 
 
+// // NAV
+.navigation{
+-webkit-backface-visibility: hidden;
+z-index: 5;
+position: fixed;
+margin-top: -40px;
+}
+.navigation a{
+border: 1px solid rgba(255,255,255,.8);
+background-color: transparent;
+}
+
+.navigation a:hover{
+background-color:rgba(255,255,255,.8);
+}
+.navigation a.active{
+background-color:rgba(255,255,255,.9);
+}
 
 
 //      //
@@ -60,14 +78,9 @@ a{
 
     p {
         color: white;
-        opacity: 0;
+        opacity: .6;
         transition: 400ms ease-in;
         text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
-        &.active {
-            opacity: 0.6;
-            transition-delay: 50ms;
-
-        }
         &:hover{
             transition: 450ms ease-in;
             opacity: .9;
@@ -140,7 +153,7 @@ a{
     .project-description{
         position: relative;
         top: 18%;
-        left: 345px;
+        left: 310px;
         width: 35%;
     }
 }
@@ -281,7 +294,7 @@ a{
 // MEDIA QUERIES
 //
 
-/* 900px and under*/
+/* 1200px and under*/
 @media only screen and (max-width: 1200px) {
     // .sidebar{
     //     font-size: 2em;
@@ -384,7 +397,13 @@ a{
 }
 // 480 and under //
 @media only screen and (max-width: 480px) {
-
+    .navigation {
+    position: fixed;
+    top: 99%;
+    width:80%;
+    left: 50%;
+    margin-left: -40px;
+    }
         .project-description{
          z-index: 0;
         }

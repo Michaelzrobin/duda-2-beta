@@ -2,6 +2,11 @@ html{
     height:100%;
 }
 
+// NAV
+.navigation {
+margin-top: -74px;
+right: 24px;
+}
 // description
 .series-description{
     top: 30%;
@@ -27,6 +32,9 @@ html{
         bottom: 42px;
     }
 }
+
+
+
 // SALMON
 body{
     position:relative;
@@ -191,9 +199,12 @@ and (max-width : 1024px){
         }
     }
 }
-/* 320 and */
+/* 480 and */
 @media only screen and (max-width: 480px) {
-
+    .navigation {
+    margin-left: -74px;
+    margin-top: -40px;
+    }
     .on{
         .fixed{
             a{

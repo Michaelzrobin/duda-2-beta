@@ -14,17 +14,17 @@ $(function() {
         $('.toggle-it, .plus-to-minus, .sidebar').toggleClass('color-change');
     });
 
-    $(".screen-wrapper").waypoint(function () {
-        var $this = $(this);
-        var $projectDesctiptions = $(".project-description p");
+    // $(".screen-wrapper").waypoint(function () {
+    //     var $this = $(this);
+    //     var $projectDesctiptions = $(".project-description p");
 
-        $projectDesctiptions.toggleClass("active", false);
+    //     $projectDesctiptions.toggleClass("active", false);
 
-        $this
-            .find(".project-description p")
-            .toggleClass("active", true);
+    //     $this
+    //         .find(".project-description p")
+    //         .toggleClass("active", true);
 
-    });
+    // });
 });
 
 

@@ -23,6 +23,23 @@ html, body{
 .artist-name{
 }
 
+//NAV
+.navigation{
+    margin-top: -100px;
+}
+.navigation a{
+border: 1px solid rgba(255,255,255,.5);
+background-color: transparent;
+
+}
+.navigation a:hover{
+background-color:rgba(255,255,255,.9);
+}
+.navigation a.active{
+background-color:rgba(255,255,255,.9);
+}
+
+
 // INSERT PHOTOS HERE
 .photos{
     // position:relative;
@@ -198,6 +215,21 @@ html, body{
 
 /* 480 and */
 @media only screen and (max-width: 480px) {
+    .navigation{
+
+    margin-left: -100px;
+    margin-top: -40px;
+}
+.navigation a{
+border: 1px solid black;
+}
+.navigation a:hover{
+background-color:rgba(0,0,0,.7);
+}
+.navigation a.active{
+background-color:rgba(0,0,0,.7);
+}
+
     .sidebar a{
         color:white;
     }

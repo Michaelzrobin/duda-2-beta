@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="prefixfree.js"></script>
+    <script src="/javascripts/prefixfree.js"></script>
 
 </head>
 <body id="page-bleach">
@@ -50,11 +50,20 @@
             </ul>
     </div>
 
-
+    <div class="navigation">
+        <ul>
+            <li><a href="#cover">one</a></li>
+            <li><a href="#page1">two</a></li>
+            <li><a href="#page2">three</a></li>
+            <li><a href="#page3">four</a></li>
+            <li><a href="#page4">five</a></li>
+            <li><a href="#page5">six</a></li>
+        </ul>
+    </div>
     <!-- PHOTOS -->
 
     <div class="photos screen-wrapper">
-        <div class="cover" id="cover">
+        <div class="cover par" id="cover">
             <!-- <a href="##page1|1400" class="helper-arrow">↓</a> -->
             <a href="##page1|1200" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -66,7 +75,7 @@
         </div>
          <!-- <a href="##page1" class="helper-arrow" href="#fbsection2">↓</a> -->
 
-        <div class="page1" id="page1">
+        <div class="page1 par" id="page1">
             <!-- <a href="#page2" class="helper-arrow" href="#fbsection2">↓</span> -->
 
             <a href="##page2|1200" class="not-mobile">
@@ -78,7 +87,7 @@
             <div class="screen"></div>
 
         </div>
-        <div class="page2" id="page2">
+        <div class="page2 par" id="page2">
             <!-- <a href="#page3" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page3|1200" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -89,7 +98,7 @@
             <div class="screen"></div>
 
         </div>
-        <div class="page3" id="page3">
+        <div class="page3 par" id="page3">
             <!-- <a href="#page4" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page4|1200" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -100,7 +109,7 @@
             <div class="screen"></div>
 
         </div>
-        <div class="page4" id="page4">
+        <div class="page4 par" id="page4">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page5|1200" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -111,7 +120,7 @@
             <div class="screen"></div>
 
         </div>
-        <div class="page5" id="page5">
+        <div class="page5 par" id="page5">
             <!-- <a href="#cover"  class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##cover|600" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -136,6 +145,9 @@
     <script src="/javascripts/jquery.js"></script>
     <!-- Include Arbitrary Anchor Script -->
     <script type="text/javascript" src="/javascripts/jquery.arbitrary-anchor.js"></script>
+   <!--
+    <script src="/javascripts/vendor/jquery-waypoints/waypoints.min.js"></script>
+    -->
     <script src="/javascripts/scripts.js"></script>
 
 </body>
