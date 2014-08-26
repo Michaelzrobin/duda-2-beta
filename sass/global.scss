@@ -200,7 +200,7 @@ opacity: .5;
         width: 100%;
         height: 100%;
         margin-right:20px;
-        background-repeat:no-repeat;
+        background:no-repeat fixed;
         background-position: 81% 45%;
         background-size: 70%;
     }
@@ -318,8 +318,35 @@ opacity: .5;
 // MEDIA QUERIES
 //
 /* iPads (landscape) ----------- */
+<<<<<<< HEAD
 
 
+=======
+@media only screen
+and (max-width : 1024px){
+    .photos{
+        div{
+            background-attachment: scroll;
+            background-size: 90%;
+        }
+    }
+    .link-spanner{
+        z-index:1;
+    }
+    .photos{
+        div{
+        background-size: 85%;
+        }
+    }
+
+    .series-title{
+        color: black;
+    }
+    .back{
+    opacity:.9;
+}
+}
+>>>>>>> parent of a548bfb... no idea what I'm doing anymore
 
 /* 900px and under*/
 // resizing sidebar
@@ -332,6 +359,11 @@ opacity: .5;
     }
     .link-spanner{
         z-index:1;
+    }
+    .photos{
+        div{
+        background-size: 85%;
+        }
     }
 
     .series-title{

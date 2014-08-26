@@ -192,12 +192,17 @@ a:hover {
   bottom: -12px;
 }
 
+<<<<<<< HEAD
 .last-arrow:hover {
   bottom: 6px;
 }
 
 /* 1200px and under*/
 @media only screen and (max-width: 1200px) {
+=======
+/* 900px and under*/
+@media only screen and (max-width: 900px) {
+>>>>>>> parent of a548bfb... no idea what I'm doing anymore
   #fbsection1 .project-description {
     position: absolute;
     left: 50%;
