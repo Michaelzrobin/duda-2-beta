@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+.navigation {
+  margin-top: -65px;
+}
+
 .series-description {
   top: 32%;
   left: 39%;
@@ -93,6 +97,13 @@ html, body {
   .photos div.cover, .photos div.page1, .photos div.page2, .photos div.page3, .photos div.page4, .photos div.page5 {
     height: 90%;
     width: auto;
+  }
+}
+/* 480 and */
+@media only screen and (max-width: 480px) {
+  .navigation {
+    margin-left: -74px;
+    margin-top: -40px;
   }
 }
 /* 900px and under*/

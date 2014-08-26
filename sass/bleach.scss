@@ -3,6 +3,10 @@ html, body{
     height:100%;
 }
 
+// NAV
+// NAV
+.navigation{
+margin-top: -65px;}
 // DESCRIPTION
 
 .series-description{
@@ -11,6 +15,7 @@ html, body{
     width: 45%;
 
 }
+
 
 //
 // helper-arrow to guide user to scroll
@@ -179,8 +184,13 @@ and (max-width : 900px){
     }
 }
 
-
-
+/* 480 and */
+@media only screen and (max-width: 480px) {
+    .navigation {
+    margin-left: -74px;
+    margin-top:-40px;
+    }
+}
 
 
 //
