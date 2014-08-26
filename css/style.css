@@ -10886,40 +10886,6 @@ p {
   font-family: "Junction", sans-serif;
 }
 
-.navigation {
-  -webkit-backface-visibility: hidden;
-  z-index: 5;
-  position: fixed;
-  top: 50%;
-  right: 35px;
-  margin-top: -74px;
-}
-
-.navigation li {
-  height: 20px;
-}
-
-.navigation a {
-  transition: 300ms;
-  display: block;
-  width: 13px;
-  height: 13px;
-  text-indent: -9999px;
-  border-radius: 25px;
-  border: 1px solid black;
-  background-color: transparent;
-}
-
-.navigation a:hover {
-  border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.navigation a.active {
-  border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .hidden {
   display: none;
 }
@@ -11029,7 +10995,7 @@ p {
   width: 100%;
   height: 100%;
   margin-right: 20px;
-  background: no-repeat fixed;
+  background-repeat: no-repeat;
   background-position: 81% 45%;
   background-size: 70%;
 }
@@ -11118,31 +11084,6 @@ p {
 }
 
 /* iPads (landscape) ----------- */
-<<<<<<< HEAD
-=======
-@media only screen and (max-width: 1024px) {
-  .photos div {
-    background-attachment: scroll;
-    background-size: 90%;
-  }
-
-  .link-spanner {
-    z-index: 1;
-  }
-
-  .photos div {
-    background-size: 85%;
-  }
-
-  .series-title {
-    color: black;
-  }
-
-  .back {
-    opacity: .9;
-  }
-}
->>>>>>> parent of a548bfb... no idea what I'm doing anymore
 /* 900px and under*/
 @media only screen and (max-width: 1024px) {
   .photos div {
@@ -11154,36 +11095,12 @@ p {
     z-index: 1;
   }
 
-  .photos div {
-    background-size: 85%;
-  }
-
   .series-title {
     color: black;
   }
 
   .back {
     opacity: .9;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .navigation {
-    position: fixed;
-    top: 99%;
-    width: 80%;
-    left: 50%;
-    margin-left: -74px;
-    margin-top: -40px;
-  }
-
-  .navigation a {
-    width: 11px;
-    height: 11px;
-  }
-
-  .navigation li {
-    height: 20px;
-    display: inline-block;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -11308,11 +11225,7 @@ p {
   left: 220px;
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 1024px) {
-=======
-@media only screen and (max-width: 900px) {
->>>>>>> parent of a548bfb... no idea what I'm doing anymore
   .sidebar {
     font-size: 2.6em;
     transition: font-size 1ms ease-in;
@@ -11541,14 +11454,10 @@ body#page-lia .photos .page12 {
 }
 
 body#page-bleach {
-  /* 480 and */
   /* 900px and under*/
 }
 body#page-bleach html, body#page-bleach body {
   height: 100%;
-}
-body#page-bleach .navigation {
-  margin-top: -65px;
 }
 body#page-bleach .series-description {
   top: 32%;
@@ -11592,7 +11501,6 @@ body#page-bleach .photos div {
 body#page-bleach .photos .cover {
   background-image: url(/images/optimized/bleach.png);
   background-position: 75% 50%;
-  position: relative;
 }
 body#page-bleach .photos .page1 {
   background-image: url(/images/optimized/bleach02.png);
@@ -11636,23 +11544,13 @@ body#page-bleach .photos .page5 {
     width: auto;
   }
 }
-@media only screen and (max-width: 480px) {
-  body#page-bleach .navigation {
-    margin-left: -74px;
-    margin-top: -40px;
-  }
-}
 
 body#page-salmon {
   /* 900px and under*/
-  /* 480 and */
+  /* 320 and */
 }
 body#page-salmon html {
   height: 100%;
-}
-body#page-salmon .navigation {
-  margin-top: -74px;
-  right: 24px;
 }
 body#page-salmon .series-description {
   top: 30%;
@@ -11780,10 +11678,6 @@ body#page-salmon .on .fixed {
   }
 }
 @media only screen and (max-width: 480px) {
-  body#page-salmon .navigation {
-    margin-left: -74px;
-    margin-top: -40px;
-  }
   body#page-salmon .on .fixed a {
     color: white;
   }
@@ -11809,19 +11703,6 @@ body#page-watercolors .helper-arrow {
 }
 body#page-watercolors .helper-arrow:hover {
   bottom: 18px;
-}
-body#page-watercolors .navigation {
-  margin-top: -100px;
-}
-body#page-watercolors .navigation a {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: transparent;
-}
-body#page-watercolors .navigation a:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-body#page-watercolors .navigation a.active {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 body#page-watercolors .photos div {
   width: 100%;
@@ -11916,19 +11797,6 @@ body#page-watercolors .on .fixed {
   }
 }
 @media only screen and (max-width: 480px) {
-  body#page-watercolors .navigation {
-    margin-left: -100px;
-    margin-top: -40px;
-  }
-  body#page-watercolors .navigation a {
-    border: 1px solid black;
-  }
-  body#page-watercolors .navigation a:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  body#page-watercolors .navigation a.active {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
   body#page-watercolors .sidebar a {
     color: white;
   }
@@ -12044,7 +11912,7 @@ body#page-contact .show {
 }
 
 body#page-stories {
-  /* 1200px and under*/
+  /* 900px and under*/
   /* 320 and */
 }
 body#page-stories html, body#page-stories body {
@@ -12058,22 +11926,6 @@ body#page-stories a:hover {
   text-decoration: none;
   color: black;
   cursor: pointer;
-}
-body#page-stories .navigation {
-  -webkit-backface-visibility: hidden;
-  z-index: 5;
-  position: fixed;
-  margin-top: -40px;
-}
-body#page-stories .navigation a {
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  background-color: transparent;
-}
-body#page-stories .navigation a:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-body#page-stories .navigation a.active {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 body#page-stories .project-title {
   font-size: 3em;
@@ -12092,9 +11944,13 @@ body#page-stories .project-description {
 }
 body#page-stories .project-description p {
   color: white;
-  opacity: .6;
+  opacity: 0;
   transition: 400ms ease-in;
   text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
+}
+body#page-stories .project-description p.active {
+  opacity: 0.6;
+  transition-delay: 50ms;
 }
 body#page-stories .project-description p:hover {
   transition: 450ms ease-in;
@@ -12141,7 +11997,7 @@ body#page-stories .fbsection3 .project-description {
 body#page-stories .fbsection4 .project-description {
   position: relative;
   top: 18%;
-  left: 310px;
+  left: 345px;
   width: 35%;
 }
 body#page-stories .fbsection5 .project-description {
@@ -12217,14 +12073,10 @@ body#page-stories .helper-arrow:hover {
   color: white;
   bottom: -12px;
 }
-<<<<<<< HEAD
 body#page-stories .last-arrow:hover {
   bottom: 6px;
 }
 @media only screen and (max-width: 1200px) {
-=======
-@media only screen and (max-width: 900px) {
->>>>>>> parent of a548bfb... no idea what I'm doing anymore
   body#page-stories #fbsection1 .project-description {
     position: absolute;
     left: 50%;
@@ -12300,13 +12152,6 @@ body#page-stories .last-arrow:hover {
   }
 }
 @media only screen and (max-width: 480px) {
-  body#page-stories .navigation {
-    position: fixed;
-    top: 99%;
-    width: 80%;
-    left: 50%;
-    margin-left: -40px;
-  }
   body#page-stories .project-description {
     z-index: 0;
   }

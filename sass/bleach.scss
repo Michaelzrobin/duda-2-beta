@@ -3,10 +3,6 @@ html, body{
     height:100%;
 }
 
-// NAV
-// NAV
-.navigation{
-margin-top: -65px;}
 // DESCRIPTION
 
 .series-description{
@@ -15,7 +11,6 @@ margin-top: -65px;}
     width: 45%;
 
 }
-
 
 //
 // helper-arrow to guide user to scroll
@@ -113,7 +108,6 @@ margin-top: -65px;}
     .cover{
         background-image: url(/images/optimized/bleach.png);
         background-position: 75% 50%;
-        position: relative;
 
 
     }
@@ -185,13 +179,8 @@ and (max-width : 900px){
     }
 }
 
-/* 480 and */
-@media only screen and (max-width: 480px) {
-    .navigation {
-    margin-left: -74px;
-    margin-top:-40px;
-    }
-}
+
+
 
 
 //

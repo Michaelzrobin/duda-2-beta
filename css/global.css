@@ -25,40 +25,6 @@ p {
   font-family: "Junction", sans-serif;
 }
 
-.navigation {
-  -webkit-backface-visibility: hidden;
-  z-index: 5;
-  position: fixed;
-  top: 50%;
-  right: 35px;
-  margin-top: -74px;
-}
-
-.navigation li {
-  height: 20px;
-}
-
-.navigation a {
-  transition: 300ms;
-  display: block;
-  width: 13px;
-  height: 13px;
-  text-indent: -9999px;
-  border-radius: 25px;
-  border: 1px solid black;
-  background-color: transparent;
-}
-
-.navigation a:hover {
-  border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.navigation a.active {
-  border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .hidden {
   display: none;
 }
@@ -168,7 +134,7 @@ p {
   width: 100%;
   height: 100%;
   margin-right: 20px;
-  background: no-repeat fixed;
+  background-repeat: no-repeat;
   background-position: 81% 45%;
   background-size: 70%;
 }
@@ -257,31 +223,6 @@ p {
 }
 
 /* iPads (landscape) ----------- */
-<<<<<<< HEAD
-=======
-@media only screen and (max-width: 1024px) {
-  .photos div {
-    background-attachment: scroll;
-    background-size: 90%;
-  }
-
-  .link-spanner {
-    z-index: 1;
-  }
-
-  .photos div {
-    background-size: 85%;
-  }
-
-  .series-title {
-    color: black;
-  }
-
-  .back {
-    opacity: .9;
-  }
-}
->>>>>>> parent of a548bfb... no idea what I'm doing anymore
 /* 900px and under*/
 @media only screen and (max-width: 1024px) {
   .photos div {
@@ -293,36 +234,12 @@ p {
     z-index: 1;
   }
 
-  .photos div {
-    background-size: 85%;
-  }
-
   .series-title {
     color: black;
   }
 
   .back {
     opacity: .9;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .navigation {
-    position: fixed;
-    top: 99%;
-    width: 80%;
-    left: 50%;
-    margin-left: -74px;
-    margin-top: -40px;
-  }
-
-  .navigation a {
-    width: 11px;
-    height: 11px;
-  }
-
-  .navigation li {
-    height: 20px;
-    display: inline-block;
   }
 }
 @media only screen and (max-width: 320px) {

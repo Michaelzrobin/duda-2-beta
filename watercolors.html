@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="/javascripts/prefixfree.js"></script>
-
 </head>
 <body id="page-watercolors">
     <!-- TITLE- if background-size set to cover
@@ -19,7 +17,13 @@
             </div>
         </div>
     </div>
+    <!-- HELPER ARROW -->
 
+
+    <div class="arrow-container">
+        <a href="##page1|600" class="helper-arrow not-mobile">↓</a>
+        <a href="##page1|1400" class="helper-arrow mobile-only">↓</a>
+    </div>
     <!-- SIDEBAR -->
     <div class="toggle-it">
         <div class="fixed">
@@ -39,27 +43,11 @@
                 <li> <a href="/contact.html"> CONTACT </a> </li>
             </ul>
     </div>
-<!-- NAV -->
-    <div class="navigation">
-        <ul>
-            <li><a href="#cover">one</a></li>
-            <li><a href="#page1">two</a></li>
-            <li><a href="#page2">three</a></li>
-            <li><a href="#page3">four</a></li>
-            <li><a href="#page4">five</a></li>
-            <li><a href="#page5">six</a></li>
-            <li><a href="#page6">seven</a></li>
-            <li><a href="#page7">eight</a></li>
-            <li><a href="#page8">nine</a></li>
-            <li><a href="#page9">ten</a></li>
-            <li><a href="#page10">eleven</a></li>
-            <li><a href="#page11">twelve</a></li>
-        </ul>
-    </div>
+
     <!-- PHOTOS -->
 
     <div class="photos screen-wrapper">
-        <div class="cover par" id="cover">
+        <div class="cover" id="cover">
             <!-- <a href="##page1|1400" class="helper-arrow">↓</a> -->
             <a href="##page1|1200" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -71,7 +59,7 @@
         </div>
          <!-- <a href="##page1" class="helper-arrow" href="#fbsection2">↓</a> -->
 
-         <div class="page1 par" id="page1">
+         <div class="page1" id="page1">
             <!-- <a href="#page2" class="helper-arrow" href="#fbsection2">↓</span> -->
 
             <a href="##page2|1000" class="not-mobile">
@@ -83,7 +71,7 @@
             <div class="screen"></div>
 
         </div>
-         <div class="page2 par" id="page2">
+         <div class="page2" id="page2">
             <!-- <a href="#page3" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page3|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -94,7 +82,7 @@
             <div class="screen"></div>
 
         </div>
-         <div class="page3 par" id="page3">
+         <div class="page3" id="page3">
             <!-- <a href="#page4" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page4|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -105,7 +93,7 @@
             <div class="screen"></div>
 
         </div>
-         <div class="page4 par" id="page4">
+         <div class="page4" id="page4">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page5|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -116,7 +104,7 @@
             <div class="screen"></div>
 
         </div>
-         <div class="page5 par" id="page5">
+         <div class="page5" id="page5">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page6|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -128,7 +116,7 @@
 
         </div>
 
-         <div class="page6 par" id="page6">
+         <div class="page6" id="page6">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page7|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -140,7 +128,7 @@
 
         </div>
 
-         <div class="page7 par" id="page7">
+         <div class="page7" id="page7">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page8|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -152,7 +140,7 @@
 
         </div>
 
-         <div class="page8 par" id="page8">
+         <div class="page8" id="page8">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page9|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -164,7 +152,7 @@
 
         </div>
 
-         <div class="page9 par" id="page9">
+         <div class="page9" id="page9">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page10|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -176,7 +164,7 @@
 
         </div>
 
-         <div class="page10 par" id="page10">
+         <div class="page10" id="page10">
             <!-- <a href="#page5" class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##page11|1000" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -188,7 +176,7 @@
 
         </div>
 
-        <div class="page11 par" id="page11">
+        <div class="page11" id="page11">
             <!-- <a href="#cover"  class="helper-arrow" href="#fbsection2">↓</span> -->
             <a href="##cover|600" class="not-mobile">
                 <span class="link-spanner"></span>
@@ -208,14 +196,13 @@
 
 
     <!-- SCRIPTS -->
-
     <!-- Include jQuery -->
+
+
     <script src="/javascripts/jquery.js"></script>
+
     <!-- Include Arbitrary Anchor Script -->
     <script type="text/javascript" src="/javascripts/jquery.arbitrary-anchor.js"></script>
-<!--
-     <script src="/javascripts/vendor/jquery-waypoints/waypoints.min.js"></script>
-     -->
     <script src="/javascripts/scripts.js"></script>
 
 </body>

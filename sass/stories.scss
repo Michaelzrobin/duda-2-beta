@@ -33,24 +33,6 @@ a{
 
 
 
-// // NAV
-.navigation{
--webkit-backface-visibility: hidden;
-z-index: 5;
-position: fixed;
-margin-top: -40px;
-}
-.navigation a{
-border: 1px solid rgba(255,255,255,.8);
-background-color: transparent;
-}
-
-.navigation a:hover{
-background-color:rgba(255,255,255,.8);
-}
-.navigation a.active{
-background-color:rgba(255,255,255,.9);
-}
 
 
 //      //
@@ -78,9 +60,14 @@ background-color:rgba(255,255,255,.9);
 
     p {
         color: white;
-        opacity: .6;
+        opacity: 0;
         transition: 400ms ease-in;
         text-shadow: 2.25px 2.25px 2px rgba(0, 0, 0, 0.5);
+        &.active {
+            opacity: 0.6;
+            transition-delay: 50ms;
+
+        }
         &:hover{
             transition: 450ms ease-in;
             opacity: .9;
@@ -153,7 +140,7 @@ background-color:rgba(255,255,255,.9);
     .project-description{
         position: relative;
         top: 18%;
-        left: 310px;
+        left: 345px;
         width: 35%;
     }
 }
@@ -294,13 +281,8 @@ background-color:rgba(255,255,255,.9);
 // MEDIA QUERIES
 //
 
-<<<<<<< HEAD
-/* 1200px and under*/
-@media only screen and (max-width: 1200px) {
-=======
 /* 900px and under*/
-@media only screen and (max-width: 900px) {
->>>>>>> parent of a548bfb... no idea what I'm doing anymore
+@media only screen and (max-width: 1200px) {
     // .sidebar{
     //     font-size: 2em;
     //     transition: font-size 1ms ease-in;
@@ -344,8 +326,8 @@ background-color:rgba(255,255,255,.9);
         background-image: url(../images/optimized/previews/salmon-alt-preview.jpg);
         .project-description{
             position: absolute;
-        top: 28%;
-        left: 27%;
+            top: 28%;
+            left: 27%;
             width: 40%;
             .project-title{
             opacity:.7;
@@ -362,9 +344,9 @@ background-color:rgba(255,255,255,.9);
         background-color: rgba(255,255,255,.3);
         .project-description{
             position: absolute;
-        top: 24%;
-        left: 67%;
-        width: 30%;
+            top: 24%;
+            left: 67%;
+            width: 30%;
             .project-title{
                 opacity:.7;
             }
@@ -402,13 +384,7 @@ background-color:rgba(255,255,255,.9);
 }
 // 480 and under //
 @media only screen and (max-width: 480px) {
-    .navigation {
-    position: fixed;
-    top: 99%;
-    width:80%;
-    left: 50%;
-    margin-left: -40px;
-    }
+
         .project-description{
          z-index: 0;
         }

@@ -2,11 +2,6 @@ html {
   height: 100%;
 }
 
-.navigation {
-  margin-top: -74px;
-  right: 24px;
-}
-
 .series-description {
   top: 30%;
   left: 40%;
@@ -147,13 +142,8 @@ body {
     width: auto;
   }
 }
-/* 480 and */
+/* 320 and */
 @media only screen and (max-width: 480px) {
-  .navigation {
-    margin-left: -74px;
-    margin-top: -40px;
-  }
-
   .on .fixed a {
     color: white;
   }
